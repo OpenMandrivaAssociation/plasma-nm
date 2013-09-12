@@ -1,0 +1,1453 @@
+# Julia Dronova <juliette.tux@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kde-nm-connection-editor\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-04 23:12+0400\n"
+"PO-Revision-Date: 2013-07-15 19:43+0400\n"
+"Last-Translator: Julia Dronova <juliette.tux@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 1.5\n"
+
+msgid "%1 (%2 MHz)"
+msgstr "%1 (%2 МГц)"
+
+msgid "%1: file could not be created"
+msgstr "%1: не удалось создать файл"
+
+msgid "%1: file format error."
+msgstr "%1: ошибка формата файла."
+
+msgid "&Show password"
+msgstr "Пока&зывать пароль"
+
+msgid "(C) 2013 Daniel Nicoletti"
+msgstr "© Даниэль Николетти (Daniel Nicoletti), 2013"
+
+msgid "2G Only (GPRS/EDGE)"
+msgstr "Только 2G (GPRS/EDGE)"
+
+msgid "3G Only (UMTS/HSPA)"
+msgstr "Только 3G (UMTS/HSPA)"
+
+msgid "4G Only (LTE)"
+msgstr "Только 4G (LTE)"
+
+msgid "802.1x Security"
+msgstr "Защита 802.1x"
+
+msgctxt ""
+"@info:status Notification when the device failed due to "
+"AuthSupplicantDisconnectReason"
+msgid "Authorization supplicant disconnected"
+msgstr "Запрашивающий авторизацию отключился"
+
+msgctxt "@info:status Notification when the device failed due to CarrierReason"
+msgid "The cable was disconnected"
+msgstr "Кабель был отключен"
+
+msgctxt ""
+"@info:status Notification when the device failed due to "
+"ConnectionRemovedReason"
+msgid "The connection was removed"
+msgstr "Соединение было удалено"
+
+msgctxt ""
+"@info:status Notification when the device failed due to ModemBusyReason"
+msgid "The modem is busy"
+msgstr "Модем занят"
+
+msgctxt ""
+"@info:status Notification when the device failed due to "
+"ModemManagerUnavailable"
+msgid "ModemManager not running"
+msgstr "ModemManager не запущен"
+
+msgctxt ""
+"@info:status Notification when the device failed due to PppDisconnectReason"
+msgid "PPP disconnected"
+msgstr "PPP отключен"
+
+msgctxt ""
+"@info:status Notification when the device failed due to PppFailedReason"
+msgid "PPP failed"
+msgstr "Сбой PPP"
+
+msgctxt ""
+"@info:status Notification when the device failed due to PppStartFailedReason"
+msgid "PPP failed to start"
+msgstr "Сбой запуска PPP"
+
+msgctxt "@info:tooltip Dynamic WEP security"
+msgid "Dynamic WEP"
+msgstr "Динамический WEP"
+
+msgctxt "@info:tooltip LEAP security"
+msgid "LEAP"
+msgstr "LEAP"
+
+msgctxt "@info:tooltip WEP security"
+msgid "WEP"
+msgstr "WEP"
+
+msgctxt "@info:tooltip WPA-EAP security"
+msgid "WPA-EAP"
+msgstr "WPA-EAP"
+
+msgctxt "@info:tooltip WPA-PSK security"
+msgid "WPA-PSK"
+msgstr "WPA-PSK"
+
+msgctxt "@info:tooltip WPA2-EAP security"
+msgid "WPA2-EAP"
+msgstr "WPA2-EAP"
+
+msgctxt "@info:tooltip WPA2-PSK security"
+msgid "WPA2-PSK"
+msgstr "WPA2-PSK"
+
+msgctxt "@info:tooltip no security"
+msgid "Insecure"
+msgstr "Небезопасно"
+
+msgctxt "@info:tooltip real user name is not available"
+msgid "Not Available"
+msgstr "Недоступно"
+
+msgctxt "@info:tooltip unknown security"
+msgid "Unknown security type"
+msgstr "Неизвестный тип безопасности"
+
+msgctxt "@item::inlist Default openvpn cipher item"
+msgid "Default"
+msgstr "По умолчанию"
+
+msgctxt "@item:inlistbox Item added when OpenVPN cipher lookup failed"
+msgid "No OpenVPN ciphers found"
+msgstr "Шифров OpenVPN не найдено"
+
+msgctxt "@item:inlistbox Item added when OpenVPN cipher lookup failed"
+msgid "OpenVPN cipher lookup failed"
+msgstr "Сбой поиска шифра OpenVPN"
+
+msgctxt "@item:intable shortcut for Not Available"
+msgid "N/A"
+msgstr "н/д"
+
+msgctxt "@label Dynamic WEP security"
+msgid "Dynamic WEP"
+msgstr "Динамический WEP"
+
+msgctxt "@label LEAP security"
+msgid "LEAP"
+msgstr "LEAP"
+
+msgctxt "@label WEP security"
+msgid "WEP"
+msgstr "WEP"
+
+msgctxt "@label WPA-EAP security"
+msgid "WPA-EAP"
+msgstr "WPA-EAP"
+
+msgctxt "@label WPA-PSK security"
+msgid "WPA-PSK"
+msgstr "WPA-PSK"
+
+msgctxt "@label WPA2-EAP security"
+msgid "WPA2-EAP"
+msgstr "WPA2-EAP"
+
+msgctxt "@label WPA2-PSK security"
+msgid "WPA2-PSK"
+msgstr "WPA2-PSK"
+
+msgctxt "@label no security"
+msgid "Insecure"
+msgstr "Небезопасно"
+
+msgctxt "@label unknown security"
+msgid "Unknown security type"
+msgstr "Неизвестный тип безопасности"
+
+msgctxt "@title:window advanced permissions editor"
+msgid "Advanced Permissions Editor"
+msgstr "Редактор расширенных прав доступа"
+
+msgid "Access Point (MAC)"
+msgstr "Точка доступа (MAC)"
+
+msgid "Access Point (SSID)"
+msgstr "Точка доступа (SSID)"
+
+msgid "Access point (BSSID):"
+msgstr "Точка доступа (BSSID):"
+
+msgid "Access point (SSID):"
+msgstr "Точка доступа (SSID):"
+
+msgid "Access technology:"
+msgstr "Способ доступа:"
+
+msgid "Active connections"
+msgstr "Активные соединения"
+
+msgid "Add"
+msgstr "Добавить"
+
+msgid "Advanced"
+msgstr "Дополнительно"
+
+msgctxt "Allowed Gsm modes (2G/3G/any)"
+msgid "Any"
+msgstr "Любой"
+
+msgctxt "Allowed Gsm modes (2G/3G/any)"
+msgid "Only 2G"
+msgstr "Только 2G"
+
+msgctxt "Allowed Gsm modes (2G/3G/any)"
+msgid "Only 3G"
+msgstr "Только 3G"
+
+msgctxt "Allowed Gsm modes (2G/3G/any)"
+msgid "Prefer 2G"
+msgstr "Предпочитать 2G"
+
+msgctxt "Allowed Gsm modes (2G/3G/any)"
+msgid "Prefer 3G"
+msgstr "Предпочитать 3G"
+
+msgctxt "Any cellular frequency band"
+msgid "Any"
+msgstr "Любой"
+
+msgctxt "As in 'Unlock cell phone with this pin code'"
+msgid "Unlock"
+msgstr "Разблокировать"
+
+msgid "Auto connect"
+msgstr "Автоматическое подключение"
+
+msgid "Back"
+msgstr "Назад"
+
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgid "Bluetooth (%1)"
+msgstr "Bluetooth (%1)"
+
+msgid "Bluetooth Name"
+msgstr "Имя Bluetooth"
+
+msgid "Bluetooth name of the device"
+msgstr "Имя устройства Bluetooth"
+
+msgid "Bridge"
+msgstr "Мост"
+
+msgid "Bridge (%1)"
+msgstr "Мост (%1)"
+
+msgid "Broadcast address"
+msgstr "Широковещательный адрес"
+
+msgid "Cancel"
+msgstr "Отмена"
+
+msgctxt "Cdma cellular type"
+msgid "Cdma"
+msgstr "Cdma"
+
+msgctxt "Cellular access technology"
+msgid "EDGE"
+msgstr "EDGE"
+
+msgctxt "Cellular access technology"
+msgid "GPRS"
+msgstr "GPRS"
+
+msgctxt "Cellular access technology"
+msgid "GSM"
+msgstr "GSM"
+
+msgctxt "Cellular access technology"
+msgid "HSDPA"
+msgstr "HSDPA"
+
+msgctxt "Cellular access technology"
+msgid "HSPA"
+msgstr "HSPA"
+
+msgctxt "Cellular access technology"
+msgid "HSPA+"
+msgstr "HSPA+"
+
+msgctxt "Cellular access technology"
+msgid "HSUPA"
+msgstr "HSUPA"
+
+msgctxt "Cellular access technology"
+msgid "UMTS"
+msgstr "UMTS"
+
+msgctxt "Cellular frequency band"
+msgid "GSM/GPRS/EDGE 1800 MHz"
+msgstr "GSM/GPRS/EDGE 1800 МГц"
+
+msgctxt "Cellular frequency band"
+msgid "GSM/GPRS/EDGE 1900 MHz"
+msgstr "GSM/GPRS/EDGE 1900 МГц"
+
+msgctxt "Cellular frequency band"
+msgid "GSM/GPRS/EDGE 850 MHz"
+msgstr "GSM/GPRS/EDGE 850 МГц"
+
+msgctxt "Cellular frequency band"
+msgid "GSM/GPRS/EDGE 900 MHz"
+msgstr "GSM/GPRS/EDGE 900 МГц"
+
+msgctxt "Cellular frequency band"
+msgid "WCDMA 2100 MHz (Class I)"
+msgstr "WCDMA 2100 МГц (Класс I)"
+
+msgctxt "Cellular frequency band"
+msgid "WCDMA 3GPP 1800 MHz (Class III)"
+msgstr "WCDMA 3GPP 1800 МГц (Класс III)"
+
+msgctxt "Cellular frequency band"
+msgid "WCDMA 3GPP AWS 1700/2100 MHz (Class IV)"
+msgstr "WCDMA 3GPP AWS 1700/2100 МГц (Класс IV)"
+
+msgctxt "Cellular frequency band"
+msgid "WCDMA 3GPP UMTS 1700 MHz (Class IX)"
+msgstr "WCDMA 3GPP UMTS 1700 МГц (Класс IX)"
+
+msgctxt "Cellular frequency band"
+msgid "WCDMA 3GPP UMTS 1900 MHz (Class II)"
+msgstr "WCDMA 3GPP UMTS 1900 МГц (Класс II)"
+
+msgctxt "Cellular frequency band"
+msgid "WCDMA 3GPP UMTS 2600 MHz (Class VII)"
+msgstr "WCDMA 3GPP UMTS 2600 МГц (Класс VII)"
+
+msgctxt "Cellular frequency band"
+msgid "WCDMA 3GPP UMTS 800 MHz (Class VI)"
+msgstr "WCDMA 3GPP UMTS 800 МГц (Класс VI)"
+
+msgctxt "Cellular frequency band"
+msgid "WCDMA 3GPP UMTS 850 MHz (Class V)"
+msgstr "WCDMA 3GPP UMTS 850 МГц (Класс V)"
+
+msgctxt "Cellular frequency band"
+msgid "WCDMA 3GPP UMTS 900 MHz (Class VIII)"
+msgstr "WCDMA 3GPP UMTS 900 МГц (Класс VIII)"
+
+msgid ""
+"Check failed for certificate from VPN server \"%1\".\n"
+"Reason: %2\n"
+"Accept it anyway?"
+msgstr ""
+"Сбой проверки сертификата с сервера VPN «%1».\n"
+"Причина: %2\n"
+"Принять сертификат всё равно?"
+
+msgid "Connect"
+msgstr "Подключиться"
+
+msgid "Connected"
+msgstr "Подключено"
+
+msgid "Connected to %1"
+msgstr "Подключено к %1"
+
+msgid "Connecting"
+msgstr "Соединение"
+
+msgid "Connecting to %1"
+msgstr "Подключение к %1"
+
+msgid "Connection"
+msgstr "Соединение"
+
+msgid "Connection %1 has been added"
+msgstr "Соединение 1% было добавлено"
+
+msgid "Connection %1 has been removed"
+msgstr "Соединение 1% было удалено"
+
+msgid "Connection %1 has been updated"
+msgstr "Соединение 1% было обновлено"
+
+msgid "Connection Speed"
+msgstr "Скорость соединения"
+
+msgid "Connection State"
+msgstr "Состояние соединения"
+
+msgid "Connection attempt was unsuccessful."
+msgstr "Попытка установления сетевого соединения не удалась."
+
+msgid "Connection name:"
+msgstr "Название соединения:"
+
+msgid "Connection speed"
+msgstr "Скорость соединения"
+
+msgid "Connection speed:"
+msgstr "Скорость соединения:"
+
+msgid "Connection state"
+msgstr "Состояние соединения"
+
+msgid "Contacting host, please wait..."
+msgstr "Установления связи с узлом, подождите..."
+
+msgid "Could not open file"
+msgstr "Не удалось открыть файл"
+
+msgid "Could not open file for writing"
+msgstr "Невозможно открыть файл для записи"
+
+msgid "DSL"
+msgstr "DSL"
+
+msgid "Daniel Nicoletti"
+msgstr "Даниэль Николетти (Daniel Nicoletti)"
+
+msgid "Delete"
+msgstr "Удалить"
+
+msgid "Developer"
+msgstr "Разработчик"
+
+msgid "Device driver"
+msgstr "Драйвер устройства"
+
+msgid "Disable networking"
+msgstr "Выключить сеть"
+
+msgid "Disconnect"
+msgstr "Отключиться"
+
+msgid "Disconnected"
+msgstr "Отключено"
+
+msgid "Disconnecting"
+msgstr "Отключение"
+
+msgid "Do you really want to remove connection %1?"
+msgstr "Действительно удалить соединение '%1?"
+
+msgid "Do you want to remove the connection '%1'?"
+msgstr "Действительно удалить соединение '%1?"
+
+msgid "Domain name"
+msgstr "Имя домена"
+
+msgid "Driver"
+msgstr "Драйвер"
+
+msgid "Driver version"
+msgstr "Версия драйвера"
+
+msgid "Driver:"
+msgstr "Драйвер:"
+
+msgid "Edit"
+msgstr "Изменить"
+
+msgid "Edit Connection '%1'"
+msgstr "Изменить подключение '%1'"
+
+msgid "Edit DNS search domains"
+msgstr "Изменить домены поиска DNS"
+
+msgid "Edit DNS servers"
+msgstr "Изменить серверы DNS"
+
+msgid "Edit connection"
+msgstr "Изменить подключение"
+
+msgid "Edit connections..."
+msgstr "Изменить подключения..."
+
+msgid "Enable networking"
+msgstr "Управление сетью"
+
+msgctxt "Error message in VPN import/export dialog"
+msgid "Operation not supported for this VPN type."
+msgstr "Операция для данного типа VPN не поддерживается."
+
+msgid "Ethernet"
+msgstr "Ethernet"
+
+msgid "File %1 could not be opened."
+msgstr "Не удалось открыть файл %1."
+
+msgid "File %1 is not a valid OpenVPN configuration (no remote)."
+msgstr ""
+"Файл %1 не является допустимым файлом конфигурации "
+"OpenVPN (отсутствует remote)."
+
+msgid "File %1 is not a valid OpenVPN's client configuration file"
+msgstr ""
+"Файл %1 не является допустимым файлом конфигурации "
+"OpenVPN"
+
+msgid "Frequency Band:"
+msgstr "Частотный диапазон:"
+
+msgid "Frequency band:"
+msgstr "Частотный диапазон:"
+
+msgid "From file..."
+msgstr "Из файла..."
+
+msgid "GBit/s"
+msgstr "Гбит/с"
+
+msgid "GSM"
+msgstr "GSM"
+
+msgctxt "GSM network type"
+msgid "Any"
+msgstr "Любое"
+
+msgid "General"
+msgstr "Общие"
+
+msgctxt "Gsm cellular type"
+msgid "Gsm"
+msgstr "Gsm"
+
+msgid "Hardware"
+msgstr "Оборудование"
+
+msgid "Hardware address"
+msgstr "Аппаратный адрес"
+
+msgctxt "Header text for IPv4 address"
+msgid "Address"
+msgstr "Адрес"
+
+msgctxt "Header text for IPv4 gateway"
+msgid "Gateway"
+msgstr "Шлюз"
+
+msgctxt "Header text for IPv4 netmask"
+msgid "Netmask"
+msgstr "Маска сети"
+
+msgctxt "Header text for IPv4 route metric"
+msgid "Metric"
+msgstr "Метрика"
+
+msgctxt "Header text for IPv6 address"
+msgid "Address"
+msgstr "Адрес"
+
+msgctxt "Header text for IPv6 gateway"
+msgid "Gateway"
+msgstr "Шлюз"
+
+msgctxt "Header text for IPv6 netmask"
+msgid "Netmask"
+msgstr "Маска сети"
+
+msgctxt "Header text for IPv6 prefix"
+msgid "Prefix"
+msgstr "Префикс"
+
+msgctxt "Header text for IPv6 route metric"
+msgid "Metric"
+msgstr "Метрика"
+
+msgid "Home"
+msgstr "Домашняя папка"
+
+msgctxt "IKE DH group"
+msgid "DH Group 1"
+msgstr "Группа DH 1"
+
+msgctxt "IKE DH group"
+msgid "DH Group 2 (default)"
+msgstr "Группа DH 2 (по умолчанию)"
+
+msgctxt "IKE DH group"
+msgid "DH Group 5"
+msgstr "Группа DH 5"
+
+msgid "IMEI:"
+msgstr "IMEI:"
+
+msgid "INCORRECT MODE FIX ME"
+msgstr "Внутренняя ошибка: неверный режим"
+
+msgid "IP Address"
+msgstr "IP-адрес"
+
+msgid "IPv4"
+msgstr "IPv4"
+
+msgid "IPv4 Address"
+msgstr "IPv4-адрес"
+
+msgid "IPv4 Address:"
+msgstr "IPv4-адрес:"
+
+msgid "IPv4 Gateway"
+msgstr "Шлюз IPv4"
+
+msgid "IPv4 Gateway:"
+msgstr "Шлюз IPv4:"
+
+msgid "IPv6"
+msgstr "IPv6"
+
+msgid "IPv6 Address"
+msgstr "IPv6-адрес"
+
+msgid "IPv6 Address:"
+msgstr "IPv6-адрес:"
+
+msgid "IPv6 Gateway"
+msgstr "Шлюз IPv4"
+
+msgid "IPv6 Gateway:"
+msgstr "Шлюз IPv6:"
+
+msgid "Ilia Kats"
+msgstr "Илья Кац (Ilia Kats)"
+
+msgid "Inactive"
+msgstr "Неактивный"
+
+msgid "Incompatible NM version, 0.9.8 required"
+msgstr "Несовместимая версия NM, требуется 0.9.8"
+
+msgid "InfiniBand"
+msgstr "InfiniBand"
+
+msgid "Information"
+msgstr "Сведения"
+
+msgid "Interface name"
+msgstr "Имя интерфейса"
+
+msgid "Interface type"
+msgstr "Тип интерфейса"
+
+msgid "Invalid number of arguments (expected 1) in option: %1"
+msgstr "Неверное число аргументов (должен быть 1) у параметра: %1"
+
+msgid "Invalid number of arguments (expected 2) in option: %1"
+msgstr "Неверное число аргументов (должно быть 2) у параметра: %1"
+
+msgid "Invalid port (should be between 1 and 65535) in option: %1"
+msgstr "Неверный порт (должен быть от 1 до 65535) в параметре: %1"
+
+msgid "Invalid proxy option: %1"
+msgstr "Неверный параметр прокси: %1"
+
+msgid "Invalid size (should be between 0 and 0xFFFF) in option: %1"
+msgstr "Неверный размер (должен быть от 0 до 0xFFFF) в параметре: %1"
+
+msgid "Invalid size (should be between 0 and 604800) in option: %1"
+msgstr "Неверный размер (должен быть от 0 до 604800) в параметре: %1"
+
+msgid "KBit/s"
+msgstr "кбит/с"
+
+msgid "Key Password:"
+msgstr "Пароль ключа:"
+
+msgctxt ""
+"Label for last used time for a network connection that has never been used"
+msgid "Never"
+msgstr "Никогда"
+
+msgctxt ""
+"Label for last used time for a network connection used in the last day, as "
+"the number of hours since usage"
+msgid "One hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "%1 час назад"
+msgstr[1] "%1 часа назад"
+msgstr[2] "%1 часов назад"
+msgstr[3] "%1 час назад"
+
+msgctxt ""
+"Label for last used time for a network connection used in the last hour, as "
+"the number of minutes since usage"
+msgid "One minute ago"
+msgid_plural "%1 minutes ago"
+msgstr[0] "%1 минуту назад"
+msgstr[1] "%1 минуты назад"
+msgstr[2] "%1 минут назад"
+msgstr[3] "%1 минуту назад"
+
+msgctxt ""
+"Label for last used time for a network connection used the previous day"
+msgid "Yesterday"
+msgstr "Вчера"
+
+msgid "Login"
+msgstr "Логин"
+
+msgid "Lukáš Tinkl"
+msgstr "Лукаш Тинкл (Lukáš Tinkl)"
+
+msgid "MAC Address"
+msgstr "MAC-адрес"
+
+msgid "MAC Address:"
+msgstr "MAC-адрес:"
+
+msgid "MBit/s"
+msgstr "Мбит/с"
+
+msgid "Manage your network connections"
+msgstr "Управление сетевыми соединениями"
+
+msgid "Managed"
+msgstr "Управляется"
+
+msgid "Mobile Broadband (%1)"
+msgstr "Широкополосное мобильное (%1)"
+
+msgid "Mobile Broadband..."
+msgstr "Широкополосное мобильное..."
+
+msgctxt "Mobile Connection Wizard"
+msgid "&Select your plan:"
+msgstr "В&ыберите план:"
+
+msgctxt "Mobile Connection Wizard"
+msgid "(in some cases) Your broadband billing plan APN (Access Point Name)"
+msgstr ""
+"Название точки доступа (APN) вашего тарифного плана (в некоторых случаях)"
+
+msgctxt "Mobile Connection Wizard"
+msgid "APN"
+msgstr "APN"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Any CDMA device"
+msgstr "Любое CDMA-устройство"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Any GSM device"
+msgstr "Любое GSM-устройство"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Choose your Billing Plan"
+msgstr "Выбор тарифного плана"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Choose your Provider"
+msgstr "Выбор оператора услуг"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Choose your Provider's Country"
+msgstr "Выберите страну, в которой работает ваш оператор услуг"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Confirm Mobile Broadband Settings"
+msgstr "Подтверждение параметров мобильного широкополосного соединения"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Country List:"
+msgstr "Список стран:"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Create a connection for &this mobile broadband device:"
+msgstr ""
+"Создать соединение для этого &устройства широкополосной "
+"мобильной связи:"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Default"
+msgstr "По умолчанию"
+
+msgctxt "Mobile Connection Wizard"
+msgid "I can't find my provider and I wish to enter it &manually:"
+msgstr "Я не могу найти моего оператора услуг и хотел бы ввести его вручную:"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Installed CDMA device"
+msgstr "Установленное устройство CDMA"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Installed GSM device"
+msgstr "Установленное устройство GSM"
+
+msgctxt "Mobile Connection Wizard"
+msgid "My country is not listed"
+msgstr "Моей страны нет в списке"
+
+msgctxt "Mobile Connection Wizard"
+msgid "My plan is not listed..."
+msgstr "Моего плана нет в списке..."
+
+msgctxt "Mobile Connection Wizard"
+msgid "New Mobile Broadband Connection"
+msgstr "Новое широкополосное мобильное соединение"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Select your provider from a &list:"
+msgstr "Выберите оператора услуг из &списка:"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Selected plan &APN (Access Point Name):"
+msgstr "Точка доступа (&APN) выбранного плана:"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Set up a Mobile Broadband Connection"
+msgstr "Настройка широкополосного мобильного соединения"
+
+msgctxt "Mobile Connection Wizard"
+msgid ""
+"This assistant helps you easily set up a mobile broadband connection to a "
+"cellular (3G) network."
+msgstr ""
+"С помощью этого инструмента можно легко настроить мобильное "
+"широкополосное соединение с сотовой сетью (3G)."
+
+msgctxt "Mobile Connection Wizard"
+msgid "Unknown Provider"
+msgstr "Неизвестный оператор услуг"
+
+msgctxt "Mobile Connection Wizard"
+msgid ""
+"Warning: Selecting an incorrect plan may result in billing issues for your "
+"broadband account or may prevent connectivity.\n"
+"\n"
+"If you are unsure of your plan please ask your provider for your plan's APN."
+msgstr ""
+"Предупреждение: неправильный выбор тарифного плана может привести к ошибкам "
+"в вычислении платежей для вашей учётной записи или препятствовать "
+"установлению соединения.\n"
+"\n"
+"Если вы не уверены в названии вашего плана, то уточните у оператора название "
+"точки доступа (APN)."
+
+msgctxt "Mobile Connection Wizard"
+msgid "You will need the following information:"
+msgstr "Вам понадобится следующая информация:"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Your Plan:"
+msgstr "Ваш план:"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Your Provider:"
+msgstr "Ваш оператор услуг:"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Your broadband billing plan name"
+msgstr "Название вашего тарифного плана"
+
+msgctxt "Mobile Connection Wizard"
+msgid "Your broadband provider's name"
+msgstr "Название вашего оператора услуг"
+
+msgctxt "Mobile Connection Wizard"
+msgid ""
+"Your mobile broadband connection is configured with the following settings:"
+msgstr ""
+"Мобильное широкополосное соединение настроено со следующими параметрами:"
+
+msgid "Mobile Operator"
+msgstr "Мобильный оператор"
+
+msgid "Mobile Signal Quality"
+msgstr "Уровень мобильного сигнала"
+
+msgid "Mobile broadband"
+msgstr "Мобильное широкополосное"
+
+msgid "Mobile broadband enabled"
+msgstr "Мобильное широкополосное соединение включено"
+
+msgid "Mode:"
+msgstr "Режим:"
+
+msgid "Modem (%1)"
+msgstr "Модем (%1)"
+
+msgctxt "NAT traversal method"
+msgid "Cisco UDP"
+msgstr "Cisco UDP"
+
+msgctxt "NAT traversal method"
+msgid "Disabled"
+msgstr "Отключено"
+
+msgctxt "NAT traversal method"
+msgid "NAT-T always"
+msgstr "Всегда NAT-T"
+
+msgid "Name:"
+msgstr "Имя:"
+
+msgid "Needed executable cisco-decrypt could not be found."
+msgstr "Не удалось найти нужный для работы исполняемый файл cisco-decrypt."
+
+msgid "Network"
+msgstr "Сеть"
+
+msgid "Network Type:"
+msgstr "Тип сети:"
+
+msgid "Network connections"
+msgstr "Сетевые соединения"
+
+msgid "Network devices"
+msgstr "Сетевые устройства"
+
+msgid "Network settings"
+msgstr "Сетевые настройки"
+
+msgid "NetworkManager connection editor for KDE"
+msgstr "Редактор соединений NetworkManager для KDE"
+
+msgid "NetworkManager not running"
+msgstr "NetworkManager не запущен"
+
+msgid "Networking enabled"
+msgstr "Сеть включена"
+
+msgid "New %1 connection"
+msgstr "Новое %1 соединение"
+
+msgid "New Connection (%1)"
+msgstr "Новое соединение (%1)"
+
+msgid "New PIN code:"
+msgstr "Новый PIN-код:"
+
+msgid "No"
+msgstr "Нет"
+
+msgid "Not supported"
+msgstr "Не поддерживается"
+
+msgid "Operator:"
+msgstr "Оператор:"
+
+msgid "PAN (personal area network)"
+msgstr "PAN (персональная сеть)"
+
+msgid "PIN code too short. It should be at least 4 digits."
+msgstr "PIN-код слишком короткий. Должно быть не менее 4 цифр."
+
+msgid "PIN code:"
+msgstr "PIN-код:"
+
+msgid "PPP"
+msgstr "PPP"
+
+msgid "PUK code too short. It should be 8 digits."
+msgstr "PUK-код слишком короткий. Должно быть не менее 8 цифр."
+
+msgid "PUK code:"
+msgstr "PUK-код:"
+
+msgid "Partner"
+msgstr "Партнер"
+
+msgid "Password:"
+msgstr "Пароль:"
+
+msgctxt "Perfect Forward Secrecy"
+msgid "DH Group 1"
+msgstr "Группа DH 1"
+
+msgctxt "Perfect Forward Secrecy"
+msgid "DH Group 2"
+msgstr "Группа DH 2"
+
+msgctxt "Perfect Forward Secrecy"
+msgid "DH Group 5"
+msgstr "Группа DH 5"
+
+msgctxt "Perfect Forward Secrecy"
+msgid "None"
+msgstr "Нет"
+
+msgctxt "Perfect Forward Secrecy"
+msgid "Server (default)"
+msgstr "Сервер (по умолчанию)"
+
+msgid "Prefer 2G (GPRS/EDGE)"
+msgstr "Предпочитать 2G (GPRS/EDGE)"
+
+msgid "Prefer 3G (UMTS/HSPA)"
+msgstr "Предпочитать 3G (UMTS/HSPA)"
+
+msgid "Prefer 4G (LTE)"
+msgstr "Предпочитать 4G (LTE)"
+
+msgid "Previous connections"
+msgstr "Предыдущие соединения"
+
+msgid "Proxy Password:"
+msgstr "Пароль прокси:"
+
+msgid "Re-enter new PIN code:"
+msgstr "Повторно введите новый PIN-код:"
+
+msgid "Received"
+msgstr "Принято"
+
+msgid "Remove"
+msgstr "Удалить"
+
+msgid "Remove Connection"
+msgstr "Удалить подключение"
+
+msgid "SIM PIN Unlock Required"
+msgstr "Для разблокировки SIM-карты требуется указать PIN-код"
+
+msgid "SIM PIN unlock required"
+msgstr "Для разблокировки SIM-карты требуется указать PIN-код"
+
+msgid "SIM PUK Unlock Required"
+msgstr "Для разблокировки SIM-карты требуется указать PUK-код"
+
+msgid "SIM PUK unlock required"
+msgstr "Для разблокировки SIM-карты требуется указать PUK-код"
+
+msgid "Search connections..."
+msgstr "Поиск подключений..."
+
+msgid "Security:"
+msgstr "Безопасность:"
+
+msgid "Setting"
+msgstr "Настройка"
+
+msgid "Show PIN code"
+msgstr "Показать PIN-код"
+
+msgid "Show PIN/PUK code"
+msgstr "Показать PIN/PUK"
+
+msgid "Signal Quality:"
+msgstr "Уровень сигнала:"
+
+msgid "Signal Strength"
+msgstr "Мощность сигнала"
+
+msgid "Signal quality:"
+msgstr "Уровень сигнала:"
+
+msgid "Signal strength:"
+msgstr "Мощность сигнала:"
+
+msgid "Speed"
+msgstr "Скорость"
+
+msgid "Status:"
+msgstr "Состояние:"
+
+msgid "Subnet mask"
+msgstr "Маска подсети"
+
+msgid "System Name"
+msgstr "Системное имя"
+
+msgid "System name:"
+msgstr "Имя в системе:"
+
+msgctxt "Text in GSM PIN/PUK unlock error dialog"
+msgid "Error unlocking modem: %1"
+msgstr "Ошибка разблокирования модема: %1"
+
+msgid ""
+"The VPN settings file '%1' specifies that VPN traffic should be tunneled "
+"through TCP which is currently not supported in the vpnc software.\n"
+"\n"
+"The connection can still be created, with TCP tunneling disabled, however it "
+"may not work as expected."
+msgstr ""
+"В файле параметров VPN «%1» указано, что трафик VPN должен проходить через "
+"TCP-туннель, но клиент vpnc это не поддерживает.\n"
+"\n"
+"Соединение может быть установлено без туннелирования, однако в его работе "
+"возможны аномалии."
+
+msgid ""
+"The mobile broadband device '%1' requires a SIM PIN code before it can be "
+"used."
+msgstr "Для работы с устройством мобильной сети «%1» требуется PIN-код SIM."
+
+msgid ""
+"The mobile broadband device '%1' requires a SIM PUK code before it can be "
+"used."
+msgstr "Для работы с устройством мобильной сети «%1» требуется PUK-код SIM."
+
+msgid "The two PIN codes do not match"
+msgstr "PIN-коды не совпадают"
+
+msgctxt "Title for GSM PIN/PUK unlock error dialog"
+msgid "PIN/PUK unlock error"
+msgstr "Ошибка разблокирования PIN/PUK"
+
+msgid "Transmitted"
+msgstr "Передано"
+
+msgid "Turn off WiFi"
+msgstr "Выключить WiFi"
+
+msgid "Turn off WiMax"
+msgstr "Выключить WiMax"
+
+msgid "Turn off mobile broadband"
+msgstr "Выключить мобильное широкополосное соединение"
+
+msgid "Turn on WiFi"
+msgstr "Включить WiFi"
+
+msgid "Turn on WiMax"
+msgstr "Включить WiMax"
+
+msgid "Turn on mobile broadband"
+msgstr "Включить мобильное широкополосное соединение"
+
+msgid "Type"
+msgstr "Тип"
+
+msgid "Unknown"
+msgstr "Неизвестно"
+
+msgid "Unknown Error"
+msgstr "Неизвестная ошибка"
+
+msgctxt "Unknown cellular access technology"
+msgid "Unknown"
+msgstr "Неизвестное"
+
+msgctxt "Unknown cellular frequency band"
+msgid "Unknown"
+msgstr "Неизвестно"
+
+msgctxt "Unknown cellular type"
+msgid "Unknown"
+msgstr "Неизвестно"
+
+msgid "Unknown connection type"
+msgstr "Неизвестный тип  соединения"
+
+msgid "Unknown connections"
+msgstr "Неизвестные соединения"
+
+msgid "Unknown option: %1"
+msgstr "Неизвестный параметр: %1"
+
+msgid "VPN"
+msgstr "VPN"
+
+msgid "VPN Connection"
+msgstr "Соединение VPN"
+
+msgid "VPN Plugin"
+msgstr "Модуль VPN"
+
+msgid "VPN plugin type"
+msgstr "Тип модуля VPN"
+
+msgid "VPN plugin:"
+msgstr "Модуль VPN:"
+
+msgid "VPN plugins"
+msgstr "Модули VPN:"
+
+msgid "VPN secrets (%1)"
+msgstr "Пароль VPN (%1)"
+
+msgctxt "VPNC encryption method"
+msgid "None (completely insecure)"
+msgstr "Нет (полностью небезопасно)"
+
+msgctxt "VPNC encryption method"
+msgid "Secure (default)"
+msgstr "Защищенное (по умолчанию)"
+
+msgctxt "VPNC encryption method"
+msgid "Weak (use with caution)"
+msgstr "Слабый (использовать с осторожностью)"
+
+msgctxt "VPNC vendor name"
+msgid "Cisco"
+msgstr "Cisco"
+
+msgctxt "VPNC vendor name"
+msgid "Netscreen"
+msgstr "Netscreen"
+
+msgid "Value"
+msgstr "Значение"
+
+msgid "Virtual"
+msgstr "Virtual"
+
+msgid "Wi-Fi Security"
+msgstr "Защита Wi-Fi"
+
+msgctxt "Wifi AP channel and frequency"
+msgid "Channel:"
+msgstr "Канал:"
+
+msgid "Will Stephenson"
+msgstr "Уилл Стефенсон (Will Stephenson)"
+
+msgid "Wimax enabled"
+msgstr "Wimax включен"
+
+msgid "Wired"
+msgstr "Проводное"
+
+msgid "Wired (shared)"
+msgstr "Проводное (общедоступное)"
+
+msgid "Wired Interface (%1)"
+msgstr "Проводной интерфейс (%1)"
+
+msgid "Wireless"
+msgstr "Беспроводное"
+
+msgid "Wireless (shared)"
+msgstr "Беспроводное (общедоступное)"
+
+msgid "Wireless Access Point's Hardware Address"
+msgstr "Аппаратный адрес беспроводной точки доступа"
+
+msgid "Wireless Access Point's SSID"
+msgstr "SSID беспроводной точки доступа"
+
+msgid "Wireless Access Point's signal strength"
+msgstr "Мощность сигнала беспроводной точки доступа"
+
+msgid "Wireless Band"
+msgstr "Беспроводной диапазон"
+
+msgid "Wireless Channel"
+msgstr "Беспроводной канал"
+
+msgid "Wireless Frequency Band"
+msgstr "Диапазон беспроводного канала"
+
+msgid "Wireless Frequency Channel"
+msgstr "Частота беспроводного канала"
+
+msgid "Wireless Interface (%1)"
+msgstr "Беспроводной интерфейс (%1)"
+
+msgid "Wireless Mode"
+msgstr "Беспроводной режим"
+
+msgid "Wireless Security"
+msgstr "Защита беспроводной сети"
+
+msgid "Wireless enabled"
+msgstr "Беспроводная сеть включена"
+
+msgid "Yes"
+msgstr "Да"
+
+msgctxt ""
+"a secondary connection (e.g. VPN) has to be activated first to continue"
+msgid "Waiting for a secondary connection"
+msgstr "Ожидание вторичного соединения"
+
+msgctxt "bond link monitoring"
+msgid "MII (recommended)"
+msgstr "MII (рекомендуется)"
+
+msgctxt "bond mode"
+msgid "Broadcast"
+msgstr "Широковещание"
+
+msgctxt "connection speed"
+msgid "<numid>%1</numid> Bit/s"
+msgstr "<numid>%1</numid> бит/с"
+
+msgctxt "connection speed"
+msgid "<numid>%1</numid> GBit/s"
+msgstr "<numid>%1</numid> Гбит/с"
+
+msgctxt "connection speed"
+msgid "<numid>%1</numid> MBit/s"
+msgstr "<numid>%1</numid> Мбит/с"
+
+msgctxt "description of configuring hardware network interface state"
+msgid "Configuring interface"
+msgstr "Настройка интерфейса"
+
+msgctxt "description of preparing to connect network interface state"
+msgid "Preparing to connect"
+msgstr "Подготовка к подключению"
+
+msgctxt "description of unavailable network interface state"
+msgid "Unavailable"
+msgstr "Недоступно"
+
+msgctxt "description of unconnected network interface state"
+msgid "Not connected"
+msgstr "Не подключено"
+
+msgctxt "description of unknown network interface state"
+msgid "Unknown"
+msgstr "Неизвестно"
+
+msgctxt "description of unmanaged network interface state"
+msgid "Unmanaged"
+msgstr "Не управляется"
+
+msgctxt "description of waiting for authentication network interface state"
+msgid "Waiting for authorization"
+msgstr "Ожидание авторизации"
+
+msgctxt "global connection state"
+msgid "Unknown"
+msgstr "Неизвестно"
+
+msgctxt "infiniband transport mode"
+msgid "Connected"
+msgstr "Подключено"
+
+msgctxt "interface state"
+msgid "Error: Invalid state"
+msgstr "Ошибка: недопустимое состояние"
+
+msgctxt "is other action required to fully connect? captive portals, etc."
+msgid "Checking further connectivity"
+msgstr "Проверка дальнейшего соединения"
+
+msgctxt "network interface connected state label"
+msgid "Connected"
+msgstr "Подключено"
+
+msgctxt "network interface connected state label"
+msgid "Connected to %1"
+msgstr "Подключено к %1"
+
+msgctxt "network interface connection failed state label"
+msgid "Connection Failed"
+msgstr "Сбой подключения"
+
+msgctxt "network interface disconnecting state label"
+msgid "Deactivating connection"
+msgstr "Отключение соединения"
+
+msgctxt "network interface doing dhcp request in most cases"
+msgid "Setting network address"
+msgstr "Получение сетевого адреса"
+
+msgid "never"
+msgstr "никогда"
+
+msgctxt "title of the interface widget in nm's popup"
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+msgctxt "title of the interface widget in nm's popup"
+msgid "Mobile Broadband"
+msgstr "Мобильное широкополосное"
+
+msgctxt "title of the interface widget in nm's popup"
+msgid "Serial Modem"
+msgstr "Модемное"
+
+msgctxt "title of the interface widget in nm's popup"
+msgid "Virtual (bridge)"
+msgstr "Виртуальный (мост)"
+
+msgctxt "title of the interface widget in nm's popup"
+msgid "Wired Ethernet"
+msgstr "Проводное Ethernet"
+
+msgctxt "title of the interface widget in nm's popup"
+msgid "Wireless 802.11"
+msgstr "Беспроводное 802.11"
+
+msgctxt "traffic received empty"
+msgid "Received"
+msgstr "Принято"
+
+msgctxt "traffic transmitted empty"
+msgid "Transmitted"
+msgstr "Передано"
+
+msgctxt "type of network device"
+msgid "Type:"
+msgstr "Тип:"
+
+msgid "various bugfixes"
+msgstr "Различные исправления ошибок"
+
+msgctxt "wireless network cipher"
+msgid "802.1x"
+msgstr "802.1x"
+
+msgctxt "wireless network cipher"
+msgid "Group CCMP"
+msgstr "Групповой CCMP"
+
+msgctxt "wireless network cipher"
+msgid "Group TKIP"
+msgstr "Групповой TKIP"
+
+msgctxt "wireless network cipher"
+msgid "Group WEP104"
+msgstr "Групповой WEP104"
+
+msgctxt "wireless network cipher"
+msgid "Group WEP40"
+msgstr "Групповой WEP40"
+
+msgctxt "wireless network cipher"
+msgid "PSK"
+msgstr "PSK"
+
+msgctxt "wireless network cipher"
+msgid "Pairwise CCMP"
+msgstr "Парный CCMP"
+
+msgctxt "wireless network cipher"
+msgid "Pairwise TKIP"
+msgstr "Парный TKIP"
+
+msgctxt "wireless network cipher"
+msgid "Pairwise WEP104"
+msgstr "Парный WEP104"
+
+msgctxt "wireless network cipher"
+msgid "Pairwise WEP40"
+msgstr "Парный WEP40"
+
+msgctxt "wireless network operation mode"
+msgid "Access point"
+msgstr "Точка доступа"
+
+msgctxt "wireless network operation mode"
+msgid "Adhoc"
+msgstr "Одноранговый"
+
+msgctxt "wireless network operation mode"
+msgid "Infrastructure"
+msgstr "Инфраструктурный"
+
+msgctxt "wireless network operation mode"
+msgid "Unknown"
+msgstr "Неизвестно"
+

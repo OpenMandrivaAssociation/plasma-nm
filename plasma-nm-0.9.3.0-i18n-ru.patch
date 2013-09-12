@@ -1,0 +1,217 @@
+diff -urN plasma-nm-0.9.3.0/editor/kde-nm-connection-editor.desktop plasma-nm-0.9.3.0-patched/editor/kde-nm-connection-editor.desktop
+--- plasma-nm-0.9.3.0/editor/kde-nm-connection-editor.desktop	2013-09-11 02:36:34.000000000 +1100
++++ plasma-nm-0.9.3.0-patched/editor/kde-nm-connection-editor.desktop	2013-09-12 19:31:55.882762970 +1100
+@@ -14,6 +14,7 @@
+ Name[pl]=kde-nm-connection-editor
+ Name[pt]=kde-nm-connection-editor
+ Name[pt_BR]=kde-nm-connection-editor
++Name[ru]=kde-nm-connection-editor
+ Name[sk]=kde-nm-connection-editor
+ Name[sv]=kde-nm-connection-editor
+ Name[tr]=kde-nm-connection-editor
+@@ -32,6 +33,7 @@
+ GenericName[nl]=Bewerker van verbindingen
+ GenericName[pt]=Editor de ligações
+ GenericName[pt_BR]=Editor de conexão
++GenericName[ru]=Редактор сетевых соединений
+ GenericName[sk]=Editor pripojení
+ GenericName[sv]=Anslutningseditor
+ GenericName[uk]=Редактор з’єднань
+@@ -50,6 +52,7 @@
+ Comment[pl]=Edytuj swoje połączenia sieciowe
+ Comment[pt]=Edite as suas ligações de rede
+ Comment[pt_BR]=Edite as suas conexões de rede
++Comment[ru]=Редактор сетевых соединений
+ Comment[sk]=Upraviť vaše sieťové pripojenia
+ Comment[sv]=Redigera nätverksanslutningar
+ Comment[tr]=Ağ bağlantılarınızı düzenleyin
+diff -urN plasma-nm-0.9.3.0/kcm/kcm_network.desktop plasma-nm-0.9.3.0-patched/kcm/kcm_network.desktop
+--- plasma-nm-0.9.3.0/kcm/kcm_network.desktop	2013-09-11 02:36:34.000000000 +1100
++++ plasma-nm-0.9.3.0-patched/kcm/kcm_network.desktop	2013-09-12 19:29:39.076463227 +1100
+@@ -19,6 +19,7 @@
+ Name[pl]=Sieć
+ Name[pt]=Rede
+ Name[pt_BR]=Rede
++Name[ru]=Сеть
+ Name[sk]=Sieť
+ Name[sv]=Nätverk
+ Name[tr]=Ağ
+@@ -39,6 +40,7 @@
+ Comment[pl]=Konfiguruj interfejsy sieciowe
+ Comment[pt]=Configurar as interfaces de rede
+ Comment[pt_BR]=Configura as interfaces de rede
++Comment[ru]=Настройка сетевых интерфейсов
+ Comment[sk]=Nastaviť sieťové rozhrania
+ Comment[sv]=Anpassa nätverksgränssnitt
+ Comment[tr]=Ağ arayüzlerini yapılandır
+diff -urN plasma-nm-0.9.3.0/kded/plasmanm.desktop plasma-nm-0.9.3.0-patched/kded/plasmanm.desktop
+--- plasma-nm-0.9.3.0/kded/plasmanm.desktop	2013-09-11 02:36:34.000000000 +1100
++++ plasma-nm-0.9.3.0-patched/kded/plasmanm.desktop	2013-09-12 19:29:39.076463227 +1100
+@@ -12,6 +12,7 @@
+ Name[pl]=Moduł Plazmy: Menadżer Sieci
+ Name[pt]=Módulo do NM para o Plasma
+ Name[pt_BR]=Módulo do NM para o Plasma
++Name[ru]=Модуль Plasma NM
+ Name[sk]=Plasma NM modul
+ Name[sv]=Plasma NH-modul
+ Name[tr]=Plasma NM modülü
+@@ -29,6 +30,7 @@
+ Comment[pl]=Dostarcza danych poufnych do demona Menadżera Sieci Sieci
+ Comment[pt]=Fornece as senhas do serviço NetworkManager
+ Comment[pt_BR]=Fornece as senhas do serviço NetworkManager
++Comment[ru]=Предоставляет пароли демону NetworkManager
+ Comment[sk]=Poskytuje tajnosti k démonu NetworkManager
+ Comment[sv]=Tillhandahåller hemligheter till nätverkshanteringsdemonen
+ Comment[tr]=AğYönetici yardımcısına şifreleri sağlar
+diff -urN plasma-nm-0.9.3.0/lib/plasma-nm-vpnuiplugin.desktop plasma-nm-0.9.3.0-patched/lib/plasma-nm-vpnuiplugin.desktop
+--- plasma-nm-0.9.3.0/lib/plasma-nm-vpnuiplugin.desktop	2013-09-11 02:36:34.000000000 +1100
++++ plasma-nm-0.9.3.0-patched/lib/plasma-nm-vpnuiplugin.desktop	2013-09-12 19:29:39.076463227 +1100
+@@ -12,6 +12,7 @@
+ Name[pl]=Wtyczka VPN interfejsu użytkownika dla zarządzania siecią
+ Name[pt]='Plugin' de Interface VPN da Gestão de Rede
+ Name[pt_BR]=Plugin de interface VPN do gerenciamento de redes
++Name[ru]=Графический модуль для настройки VPN
+ Name[sk]=Modul pre správu siete VPN
+ Name[sv]=Insticksprogram till nätverkshantering med VPN-användargränssnitt
+ Name[tr]=Ağ Yönetimi VPN UI Eklentisi
+@@ -32,6 +33,7 @@
+ Comment[pl]=Określa wtyczki interfejsu użytkownika dla zarządzania siecią
+ Comment[pt]=Define os 'plugins' de interface da Gestão de Rede
+ Comment[pt_BR]=Define os plugins de interface do gerenciamento de redes
++Comment[ru]=Назначает графические модули для управления сетями в KDE
+ Comment[sk]=Definuje moduly pre správu siete KDE
+ Comment[sv]=Definierar insticksprogram för KDE:s nätverkshantering
+ Comment[tr]=KDE Ağ Yönetimi UI Eklentilerini tanımlar
+diff -urN plasma-nm-0.9.3.0/settings/notifications/plasma_nm_notifications.desktop plasma-nm-0.9.3.0-patched/settings/notifications/plasma_nm_notifications.desktop
+--- plasma-nm-0.9.3.0/settings/notifications/plasma_nm_notifications.desktop	2013-09-11 02:36:34.000000000 +1100
++++ plasma-nm-0.9.3.0-patched/settings/notifications/plasma_nm_notifications.desktop	2013-09-12 19:29:39.084463361 +1100
+@@ -12,6 +12,7 @@
+ Name[pl]=Powiadomienia
+ Name[pt]=Notificações
+ Name[pt_BR]=Notificações
++Name[ru]=Уведомления
+ Name[sk]=Upozornenia
+ Name[sv]=Underrättelser
+ Name[tr]=Bildirimler
+@@ -31,6 +32,7 @@
+ Comment[pl]=Konfiguruj powiadomienia zarządzania siecią
+ Comment[pt]=Configurar as notificações da Gestão da Rede
+ Comment[pt_BR]=Configura as notificações do gerenciamento de redes
++Comment[ru]=Настройка сетевых уведомлений
+ Comment[sk]=Nastaviť upozornenia správy siete
+ Comment[sv]=Anpassa underrättelser för nätverkshantering
+ Comment[tr]=Ağ Yönetim bilgilendirmelerini yapılandır
+diff -urN plasma-nm-0.9.3.0/vpn/l2tp/plasmanm_l2tpui.desktop plasma-nm-0.9.3.0-patched/vpn/l2tp/plasmanm_l2tpui.desktop
+--- plasma-nm-0.9.3.0/vpn/l2tp/plasmanm_l2tpui.desktop	2013-09-11 02:36:34.000000000 +1100
++++ plasma-nm-0.9.3.0-patched/vpn/l2tp/plasmanm_l2tpui.desktop	2013-09-12 19:29:39.085463378 +1100
+@@ -26,6 +26,7 @@
+ Name[pl]=L2TP
+ Name[pt]=L2TP
+ Name[pt_BR]=L2TP
++Name[ru]=L2TP
+ Name[sk]=L2TP
+ Name[sv]=L2TP
+ Name[tr]=L2TP
+@@ -45,6 +46,7 @@
+ Comment[pl]=Wtyczka L2TP
+ Comment[pt]='Plugin' do L2TP
+ Comment[pt_BR]=Plugin do L2TP
++Comment[ru]=Модуль L2TP
+ Comment[sk]=Plugin L2TP
+ Comment[sv]=Insticksprogram för L2TP
+ Comment[tr]=L2TP eklentisi
+diff -urN plasma-nm-0.9.3.0/vpn/openconnect/plasmanm_openconnectui.desktop plasma-nm-0.9.3.0-patched/vpn/openconnect/plasmanm_openconnectui.desktop
+--- plasma-nm-0.9.3.0/vpn/openconnect/plasmanm_openconnectui.desktop	2013-09-11 02:36:34.000000000 +1100
++++ plasma-nm-0.9.3.0-patched/vpn/openconnect/plasmanm_openconnectui.desktop	2013-09-12 19:29:39.085463378 +1100
+@@ -26,6 +26,7 @@
+ Name[pl]=OpenConnect
+ Name[pt]=OpenConnect
+ Name[pt_BR]=OpenConnect
++Name[ru]=OpenConnect
+ Name[sk]=OpenConnect
+ Name[sv]=OpenConnect
+ Name[tr]=OpenConnect
+@@ -46,6 +47,7 @@
+ Comment[pl]=Wtyczka OpenConnect
+ Comment[pt]='Plugin' do OpenConnect
+ Comment[pt_BR]=Plugin do OpenConnect
++Comment[ru]=Модуль OpenConnect
+ Comment[sk]=Plugin OpenConnect
+ Comment[sv]=Insticksprogram för OpenConnect
+ Comment[tr]=OpenConnect Eklentisi
+diff -urN plasma-nm-0.9.3.0/vpn/openswan/plasmanm_openswanui.desktop plasma-nm-0.9.3.0-patched/vpn/openswan/plasmanm_openswanui.desktop
+--- plasma-nm-0.9.3.0/vpn/openswan/plasmanm_openswanui.desktop	2013-09-11 02:36:34.000000000 +1100
++++ plasma-nm-0.9.3.0-patched/vpn/openswan/plasmanm_openswanui.desktop	2013-09-12 19:29:39.085463378 +1100
+@@ -26,6 +26,7 @@
+ Name[pl]=OpenSwan
+ Name[pt]=OpenSwan
+ Name[pt_BR]=OpenSwan
++Name[ru]=OpenSwan
+ Name[sk]=OpenSwan
+ Name[sv]=OpenSwan
+ Name[tr]=OpenSwan
+@@ -44,6 +45,7 @@
+ Comment[pl]=Wtyczka OpenSwan
+ Comment[pt]='Plugin' do OpenSwan
+ Comment[pt_BR]=Plugin do OpenSwan
++Comment[ru]=Модуль для OpenSwan
+ Comment[sk]=Plugin OpenSwan
+ Comment[sv]=Insticksprogram för OpenSwan
+ Comment[tr]=OpenSwan Eklentisi
+diff -urN plasma-nm-0.9.3.0/vpn/openvpn/plasmanm_openvpnui.desktop plasma-nm-0.9.3.0-patched/vpn/openvpn/plasmanm_openvpnui.desktop
+--- plasma-nm-0.9.3.0/vpn/openvpn/plasmanm_openvpnui.desktop	2013-09-11 02:36:34.000000000 +1100
++++ plasma-nm-0.9.3.0-patched/vpn/openvpn/plasmanm_openvpnui.desktop	2013-09-12 19:29:39.086463395 +1100
+@@ -26,6 +26,7 @@
+ Name[pl]=OpenVPN
+ Name[pt]=OpenVPN
+ Name[pt_BR]=OpenVPN
++Name[ru]=OpenVPN
+ Name[sk]=OpenVPN
+ Name[sv]=OpenVPN
+ Name[tr]=OpenVPN
+@@ -46,6 +47,7 @@
+ Comment[pl]=Wtyczka OpenVPN
+ Comment[pt]='Plugin' do OpenVPN
+ Comment[pt_BR]=Plugin do OpenVPN
++Comment[ru]=Модуль для OpenVPN
+ Comment[sk]=OpenVPN plugin
+ Comment[sv]=Insticksprogram för OpenVPN
+ Comment[tr]=OpenVPN eklentisi
+diff -urN plasma-nm-0.9.3.0/vpn/pptp/plasmanm_pptpui.desktop plasma-nm-0.9.3.0-patched/vpn/pptp/plasmanm_pptpui.desktop
+--- plasma-nm-0.9.3.0/vpn/pptp/plasmanm_pptpui.desktop	2013-09-11 02:36:34.000000000 +1100
++++ plasma-nm-0.9.3.0-patched/vpn/pptp/plasmanm_pptpui.desktop	2013-09-12 19:29:39.086463395 +1100
+@@ -26,6 +26,7 @@
+ Name[pl]=PPTP
+ Name[pt]=PPTP
+ Name[pt_BR]=PPTP
++Name[ru]=PPTP
+ Name[sk]=PPTP
+ Name[sv]=PPTP
+ Name[tr]=PPTP
+@@ -46,6 +47,7 @@
+ Comment[pl]=Wtyczka PPTP
+ Comment[pt]='Plugin' de PPTP
+ Comment[pt_BR]=Plugin de PPTP
++Comment[ru]=Модуль для PPTP
+ Comment[sk]=PPTP modul
+ Comment[sv]=Insticksprogram för PPTP
+ Comment[tr]=PPTP Eklentisi
+diff -urN plasma-nm-0.9.3.0/vpn/vpnc/plasmanm_vpncui.desktop plasma-nm-0.9.3.0-patched/vpn/vpnc/plasmanm_vpncui.desktop
+--- plasma-nm-0.9.3.0/vpn/vpnc/plasmanm_vpncui.desktop	2013-09-11 02:36:34.000000000 +1100
++++ plasma-nm-0.9.3.0-patched/vpn/vpnc/plasmanm_vpncui.desktop	2013-09-12 19:29:39.087463412 +1100
+@@ -26,6 +26,7 @@
+ Name[pl]=VPNC
+ Name[pt]=VPNC
+ Name[pt_BR]=VPNC
++Name[ru]=VPNC
+ Name[sk]=VPNC
+ Name[sv]=VPNC
+ Name[tr]=VPNC
+@@ -46,6 +47,7 @@
+ Comment[pl]=Wtyczka VPNC
+ Comment[pt]='Plugin' do VPNC
+ Comment[pt_BR]=Plugin do VPNC
++Comment[ru]=Модуль для VPNC
+ Comment[sk]=VPNC modul
+ Comment[sv]=Insticksprogram för VPNC
+ Comment[tr]=VPNC Eklentisi
