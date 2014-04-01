@@ -1,13 +1,14 @@
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	0.9.3.2
+Version:	0.9.3.3
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://projects.kde.org/projects/playground/network/%{name}
 Source0:	ftp://ftp.kde.org/pub/kde/unstable/%{name}/%{name}-%{version}.tar.xz
 Source10:	kde-nm-connection-editor-ru.po
-Patch0:		plasma-nm-0.9.3.1-i18n-ru.patch
+Patch0:		plasma-nm-0.9.3.3-i18n-ru.patch
+BuildRequires:	mobile-broadband-provider-info
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(libnm-glib)
 BuildRequires:	pkgconfig(libnm-util)
@@ -15,6 +16,7 @@ BuildRequires:	pkgconfig(ModemManagerQt)
 BuildRequires:	pkgconfig(NetworkManagerQt)
 BuildRequires:	pkgconfig(NetworkManager) >= 0.9.8
 BuildRequires:	pkgconfig(openconnect) >= 3.99
+Requires:	mobile-broadband-provider-info
 Requires:	modemmanager
 Requires:	networkmanager
 Conflicts:	plasma-applet-networkmanagement
@@ -41,7 +43,7 @@ the default NetworkManager service.
 %{_kde_libdir}/libplasmanetworkmanagement-internal.so
 %{_kde_applicationsdir}/kde-nm-connection-editor.desktop
 %{_kde_appsdir}/plasma/plasmoids/org.kde.networkmanagement
-%{_kde_appsdir}/desktoptheme/default/icons/plasma-networkmanagement.svgz
+%{_kde_appsdir}/desktoptheme/default/icons/plasma-networkmanagement2.svgz
 %{_kde_appsdir}/kde-nm-connection-editor
 %{_kde_appsdir}/networkmanagement
 %{_kde_iconsdir}/oxygen/*/devices/network-defaultroute.png

@@ -2592,9 +2592,6 @@ msgstr "Задержка форвардинга:"
 msgid "Hello time:"
 msgstr "Время приветствия:"
 
-msgid "Max age:"
-msgstr "Max age:"
-
 msgid "Saved"
 msgstr "Сохранено"
 
@@ -3907,6 +3904,30 @@ msgstr "Серверы &DNS:"
 msgctxt "@info"
 msgid "DNS Servers:"
 msgstr "Серверы DNS:"
+
+msgid "DNS Servers:"
+msgstr "Серверы DNS:"
+
+msgid "Other DNS Servers:"
+msgstr "Другие DNS-серверы:"
+
+msgid "Automatic (Only addresses)"
+msgstr "Автоматически (только адреса)"
+
+msgid "Automatic (Only DHCP)"
+msgstr "Автоматически (только DHCP)"
+
+msgid "CA Certificate:"
+msgstr "Сертификат CA:"
+
+msgid "User Certificate:"
+msgstr "Сертификат пользователя:"
+
+msgid "Private Key:"
+msgstr "Личный ключ:"
+
+msgid "Max age:"
+msgstr "Макс. возраст:"
 
 msgid ""
 "Use this field to specify the IP address(es) of one or more DNS servers. Use "
