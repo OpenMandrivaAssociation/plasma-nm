@@ -1,11 +1,30 @@
+diff -urN plasma-nm-0.9.3.3/applet/declarative/metadata.desktop.cmake plasma-nm-0.9.3.3-patched/applet/declarative/metadata.desktop.cmake
+--- plasma-nm-0.9.3.3/applet/declarative/metadata.desktop.cmake	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/applet/declarative/metadata.desktop.cmake	2014-04-02 16:05:36.820954479 +0400
+@@ -15,6 +15,7 @@
+ Name[pt]=Gestão de Rede
+ Name[pt_BR]=Gerenciamento de rede
+ Name[ro]=Gestiunea rețelei
++Name[ru]=Управление сетевыми соединениями
+ Name[sk]=Správa siete
+ Name[sl]=Omrežno upravljanje
+ Name[sv]=Nätverkshantering
+@@ -40,6 +41,7 @@
+ Comment[pt]=Estado e controlo da rede
+ Comment[pt_BR]=Estado e controle da rede
+ Comment[ro]=Starea și controlul rețelei
++Comment[ru]=Состояние и контроль сети
+ Comment[sk]=Správa a ovládanie siete
+ Comment[sl]=Stanje omrežja in nadzor
+ Comment[sv]=Nätverksstatus och kontroll
 diff -urN plasma-nm-0.9.3.3/editor/kde-nm-connection-editor.desktop plasma-nm-0.9.3.3-patched/editor/kde-nm-connection-editor.desktop
---- plasma-nm-0.9.3.3/editor/kde-nm-connection-editor.desktop	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/editor/kde-nm-connection-editor.desktop	2014-04-01 20:04:58.684295409 +1100
+--- plasma-nm-0.9.3.3/editor/kde-nm-connection-editor.desktop	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/editor/kde-nm-connection-editor.desktop	2014-04-02 16:05:36.821954479 +0400
 @@ -17,6 +17,7 @@
  Name[pt]=kde-nm-connection-editor
  Name[pt_BR]=kde-nm-connection-editor
  Name[ro]=kde-nm-connection-editor
-+Name[ru]=kde-nm-connection-editor
++Name[ru]=Редактор сетевых соединений
  Name[sk]=kde-nm-connection-editor
  Name[sl]=kde-nm-connection-editor
  Name[sv]=kde-nm-connection-editor
@@ -26,8 +45,8 @@ diff -urN plasma-nm-0.9.3.3/editor/kde-nm-connection-editor.desktop plasma-nm-0.
  Comment[sl]=Uredite vaše omrežne povezave
  Comment[sv]=Redigera nätverksanslutningar
 diff -urN plasma-nm-0.9.3.3/kded/networkmanagement.desktop plasma-nm-0.9.3.3-patched/kded/networkmanagement.desktop
---- plasma-nm-0.9.3.3/kded/networkmanagement.desktop	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/kded/networkmanagement.desktop	2014-04-01 20:04:58.684295409 +1100
+--- plasma-nm-0.9.3.3/kded/networkmanagement.desktop	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/kded/networkmanagement.desktop	2014-04-02 16:05:36.821954479 +0400
 @@ -14,6 +14,7 @@
  Name[pt]=Módulo de Gestão de Rede do Plasma
  Name[pt_BR]=Módulo do Networkmanagement para o Plasma
@@ -45,8 +64,8 @@ diff -urN plasma-nm-0.9.3.3/kded/networkmanagement.desktop plasma-nm-0.9.3.3-pat
  Comment[sl]=Ponuja skrivnosti za ozadnji program NetworkManager
  Comment[sv]=Tillhandahåller hemligheter till nätverkshanteringsdemonen
 diff -urN plasma-nm-0.9.3.3/kded/networkmanagement.notifyrc plasma-nm-0.9.3.3-patched/kded/networkmanagement.notifyrc
---- plasma-nm-0.9.3.3/kded/networkmanagement.notifyrc	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/kded/networkmanagement.notifyrc	2014-04-01 20:04:58.684295409 +1100
+--- plasma-nm-0.9.3.3/kded/networkmanagement.notifyrc	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/kded/networkmanagement.notifyrc	2014-04-02 16:09:18.336969351 +0400
 @@ -15,6 +15,7 @@
  Name[pt]=Gestão de Rede
  Name[pt_BR]=networkmanagement
@@ -87,9 +106,17 @@ diff -urN plasma-nm-0.9.3.3/kded/networkmanagement.notifyrc plasma-nm-0.9.3.3-pa
  Name[sk]=Stav pripojenia VPN zmenený
  Name[sl]=Stanje povezave VPN se je spremenilo
  Name[sv]=VPN-anslutningsstatus ändrad
+@@ -139,6 +144,7 @@
+ Name[nl]=VPN-plug-in ontbreekt
+ Name[pt]='Plugin' de VPN em falta
+ Name[pt_BR]=Plugin de VPN ausente
++Name[ru]=Отсутствует плагин VPN
+ Name[sk]=Chýba VPN plugin
+ Name[sl]=Manjka vstavek VPN
+ Name[sv]=Saknar VPN-insticksprogram
 diff -urN plasma-nm-0.9.3.3/lib/plasma-networkmanagement-vpnuiplugin.desktop plasma-nm-0.9.3.3-patched/lib/plasma-networkmanagement-vpnuiplugin.desktop
---- plasma-nm-0.9.3.3/lib/plasma-networkmanagement-vpnuiplugin.desktop	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/lib/plasma-networkmanagement-vpnuiplugin.desktop	2014-04-01 20:04:58.684295409 +1100
+--- plasma-nm-0.9.3.3/lib/plasma-networkmanagement-vpnuiplugin.desktop	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/lib/plasma-networkmanagement-vpnuiplugin.desktop	2014-04-02 16:05:36.821954479 +0400
 @@ -17,6 +17,7 @@
  Name[pt]='Plugin' de Interface VPN da Gestão de Rede
  Name[pt_BR]=Plugin de interface VPN do gerenciamento de redes
@@ -102,13 +129,13 @@ diff -urN plasma-nm-0.9.3.3/lib/plasma-networkmanagement-vpnuiplugin.desktop pla
  Comment[pt]=Define os 'plugins' de interface da Gestão de Rede
  Comment[pt_BR]=Define os plugins de interface do gerenciamento de redes
  Comment[ro]=Definește modulele de interfață pentru gestiunea rețelei
-+Comment[ru]=Назначает модули для управления сетями в KDE
++Comment[ru]=Модуль для управления сетью VPN в KDE
  Comment[sk]=Definuje moduly pre správu siete KDE
  Comment[sl]=Določa vstavke za KDE-jev vmesnik za omrežno upravljanje
  Comment[sv]=Definierar insticksprogram för KDE:s nätverkshantering
 diff -urN plasma-nm-0.9.3.3/settings/notifications/networkmanagement_notifications.desktop plasma-nm-0.9.3.3-patched/settings/notifications/networkmanagement_notifications.desktop
---- plasma-nm-0.9.3.3/settings/notifications/networkmanagement_notifications.desktop	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/settings/notifications/networkmanagement_notifications.desktop	2014-04-01 20:04:58.685295426 +1100
+--- plasma-nm-0.9.3.3/settings/notifications/networkmanagement_notifications.desktop	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/settings/notifications/networkmanagement_notifications.desktop	2014-04-02 16:05:36.821954479 +0400
 @@ -15,6 +15,7 @@
  Name[pt]=Notificações
  Name[pt_BR]=Notificações
@@ -126,8 +153,8 @@ diff -urN plasma-nm-0.9.3.3/settings/notifications/networkmanagement_notificatio
  Comment[sl]=Nastavi obvestila za omrežno upravljanje
  Comment[sv]=Anpassa underrättelser för nätverkshantering
 diff -urN plasma-nm-0.9.3.3/vpn/l2tp/plasmanetworkmanagement_l2tpui.desktop plasma-nm-0.9.3.3-patched/vpn/l2tp/plasmanetworkmanagement_l2tpui.desktop
---- plasma-nm-0.9.3.3/vpn/l2tp/plasmanetworkmanagement_l2tpui.desktop	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/vpn/l2tp/plasmanetworkmanagement_l2tpui.desktop	2014-04-01 20:04:58.685295426 +1100
+--- plasma-nm-0.9.3.3/vpn/l2tp/plasmanetworkmanagement_l2tpui.desktop	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/vpn/l2tp/plasmanetworkmanagement_l2tpui.desktop	2014-04-02 16:05:36.821954479 +0400
 @@ -29,6 +29,7 @@
  Name[pt]=L2TP
  Name[pt_BR]=L2TP
@@ -145,8 +172,8 @@ diff -urN plasma-nm-0.9.3.3/vpn/l2tp/plasmanetworkmanagement_l2tpui.desktop plas
  Comment[pt]='Plugin' do L2TP
  Comment[pt_BR]=Plugin do L2TP
 diff -urN plasma-nm-0.9.3.3/vpn/openconnect/plasmanetworkmanagement_openconnectui.desktop plasma-nm-0.9.3.3-patched/vpn/openconnect/plasmanetworkmanagement_openconnectui.desktop
---- plasma-nm-0.9.3.3/vpn/openconnect/plasmanetworkmanagement_openconnectui.desktop	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/vpn/openconnect/plasmanetworkmanagement_openconnectui.desktop	2014-04-01 20:04:58.685295426 +1100
+--- plasma-nm-0.9.3.3/vpn/openconnect/plasmanetworkmanagement_openconnectui.desktop	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/vpn/openconnect/plasmanetworkmanagement_openconnectui.desktop	2014-04-02 16:05:36.821954479 +0400
 @@ -29,6 +29,7 @@
  Name[pt]=OpenConnect
  Name[pt_BR]=OpenConnect
@@ -164,8 +191,8 @@ diff -urN plasma-nm-0.9.3.3/vpn/openconnect/plasmanetworkmanagement_openconnectu
  Comment[sl]=Vstavek OpenConnect
  Comment[sv]=Insticksprogram för OpenConnect
 diff -urN plasma-nm-0.9.3.3/vpn/openswan/plasmanetworkmanagement_openswanui.desktop plasma-nm-0.9.3.3-patched/vpn/openswan/plasmanetworkmanagement_openswanui.desktop
---- plasma-nm-0.9.3.3/vpn/openswan/plasmanetworkmanagement_openswanui.desktop	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/vpn/openswan/plasmanetworkmanagement_openswanui.desktop	2014-04-01 20:04:58.685295426 +1100
+--- plasma-nm-0.9.3.3/vpn/openswan/plasmanetworkmanagement_openswanui.desktop	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/vpn/openswan/plasmanetworkmanagement_openswanui.desktop	2014-04-02 16:05:36.821954479 +0400
 @@ -29,6 +29,7 @@
  Name[pt]=OpenSwan
  Name[pt_BR]=OpenSwan
@@ -183,8 +210,8 @@ diff -urN plasma-nm-0.9.3.3/vpn/openswan/plasmanetworkmanagement_openswanui.desk
  Comment[sl]=Vstavek OpenSwan
  Comment[sv]=Insticksprogram för OpenSwan
 diff -urN plasma-nm-0.9.3.3/vpn/openvpn/plasmanetworkmanagement_openvpnui.desktop plasma-nm-0.9.3.3-patched/vpn/openvpn/plasmanetworkmanagement_openvpnui.desktop
---- plasma-nm-0.9.3.3/vpn/openvpn/plasmanetworkmanagement_openvpnui.desktop	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/vpn/openvpn/plasmanetworkmanagement_openvpnui.desktop	2014-04-01 20:04:58.686295442 +1100
+--- plasma-nm-0.9.3.3/vpn/openvpn/plasmanetworkmanagement_openvpnui.desktop	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/vpn/openvpn/plasmanetworkmanagement_openvpnui.desktop	2014-04-02 16:05:36.821954479 +0400
 @@ -29,6 +29,7 @@
  Name[pt]=OpenVPN
  Name[pt_BR]=OpenVPN
@@ -202,8 +229,8 @@ diff -urN plasma-nm-0.9.3.3/vpn/openvpn/plasmanetworkmanagement_openvpnui.deskto
  Comment[sl]=Vstavek OpenVPN
  Comment[sv]=Insticksprogram för OpenVPN
 diff -urN plasma-nm-0.9.3.3/vpn/pptp/plasmanetworkmanagement_pptpui.desktop plasma-nm-0.9.3.3-patched/vpn/pptp/plasmanetworkmanagement_pptpui.desktop
---- plasma-nm-0.9.3.3/vpn/pptp/plasmanetworkmanagement_pptpui.desktop	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/vpn/pptp/plasmanetworkmanagement_pptpui.desktop	2014-04-01 20:04:58.686295442 +1100
+--- plasma-nm-0.9.3.3/vpn/pptp/plasmanetworkmanagement_pptpui.desktop	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/vpn/pptp/plasmanetworkmanagement_pptpui.desktop	2014-04-02 16:05:36.821954479 +0400
 @@ -29,6 +29,7 @@
  Name[pt]=PPTP
  Name[pt_BR]=PPTP
@@ -221,8 +248,8 @@ diff -urN plasma-nm-0.9.3.3/vpn/pptp/plasmanetworkmanagement_pptpui.desktop plas
  Comment[sl]=Vstavek PPTP
  Comment[sv]=Insticksprogram för PPTP
 diff -urN plasma-nm-0.9.3.3/vpn/strongswan/plasmanetworkmanagement_strongswanui.desktop plasma-nm-0.9.3.3-patched/vpn/strongswan/plasmanetworkmanagement_strongswanui.desktop
---- plasma-nm-0.9.3.3/vpn/strongswan/plasmanetworkmanagement_strongswanui.desktop	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/vpn/strongswan/plasmanetworkmanagement_strongswanui.desktop	2014-04-01 20:04:58.686295442 +1100
+--- plasma-nm-0.9.3.3/vpn/strongswan/plasmanetworkmanagement_strongswanui.desktop	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/vpn/strongswan/plasmanetworkmanagement_strongswanui.desktop	2014-04-02 16:05:36.822954480 +0400
 @@ -28,6 +28,7 @@
  Name[pt]=StrongSwan
  Name[pt_BR]=StrongSwan
@@ -240,8 +267,8 @@ diff -urN plasma-nm-0.9.3.3/vpn/strongswan/plasmanetworkmanagement_strongswanui.
  Comment[sl]=Vstavek StrongSwan
  Comment[sv]=Insticksprogram för StrongSwan
 diff -urN plasma-nm-0.9.3.3/vpn/vpnc/plasmanetworkmanagement_vpncui.desktop plasma-nm-0.9.3.3-patched/vpn/vpnc/plasmanetworkmanagement_vpncui.desktop
---- plasma-nm-0.9.3.3/vpn/vpnc/plasmanetworkmanagement_vpncui.desktop	2014-02-27 00:49:33.000000000 +1100
-+++ plasma-nm-0.9.3.3-patched/vpn/vpnc/plasmanetworkmanagement_vpncui.desktop	2014-04-01 20:04:58.686295442 +1100
+--- plasma-nm-0.9.3.3/vpn/vpnc/plasmanetworkmanagement_vpncui.desktop	2014-02-26 17:49:33.000000000 +0400
++++ plasma-nm-0.9.3.3-patched/vpn/vpnc/plasmanetworkmanagement_vpncui.desktop	2014-04-02 16:05:36.822954480 +0400
 @@ -29,6 +29,7 @@
  Name[pt]=VPNC
  Name[pt_BR]=VPNC
