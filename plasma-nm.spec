@@ -1,11 +1,12 @@
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
 Version:	0.9.3.3
-Release:	5
+Release:	6
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://projects.kde.org/projects/playground/network/%{name}
 Source0:	ftp://ftp.kde.org/pub/kde/unstable/%{name}/%{name}-%{version}.tar.xz
+Source1:	01-plasma-nm.js
 Source10:	ru.tar.gz
 Patch0:		plasma-nm-0.9.3.3-i18n-ru.patch
 BuildRequires:	mobile-broadband-provider-info
@@ -42,6 +43,7 @@ the default NetworkManager service.
 %{_kde_libdir}/libplasmanetworkmanagement-editor.so
 %{_kde_libdir}/libplasmanetworkmanagement-internal.so
 %{_kde_applicationsdir}/kde-nm-connection-editor.desktop
+%{_kde_appsdir}/plasma-desktop/updates/01-plasma-nm.js
 %{_kde_appsdir}/plasma/plasmoids/org.kde.networkmanagement
 %{_kde_appsdir}/desktoptheme/default/icons/plasma-networkmanagement2.svgz
 %{_kde_appsdir}/kde-nm-connection-editor
@@ -76,6 +78,9 @@ popd
 
 %install
 %makeinstall_std -C build
+
+mkdir -p %{buildroot}%{_kde_appsdir}/plasma-desktop/updates/
+install -m 0644 %{SOURCE1} %{buildroot}%{_kde_appsdir}/plasma-desktop/updates/01-plasma-nm.js
 
 %find_lang kde-nm-connection-editor \
 	plasma_applet_org.kde.networkmanagement \
