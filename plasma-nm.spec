@@ -8,7 +8,6 @@ Url:		https://projects.kde.org/projects/playground/network/%{name}
 Source0:	ftp://ftp.kde.org/pub/kde/unstable/%{name}/%{name}-%{version}.tar.xz
 Source1:	01-plasma-nm.js
 Source10:	ru.tar.gz
-Patch0:		plasma-nm-0.9.3.4-i18n-ru.patch
 BuildRequires:	mobile-broadband-provider-info
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(libnm-glib)
@@ -66,7 +65,6 @@ the default NetworkManager service.
 
 %prep
 %setup -q
-%patch0 -p1
 
 # Use better russian translations (must be re-checked in 0.9.3.1+)
 pushd po
