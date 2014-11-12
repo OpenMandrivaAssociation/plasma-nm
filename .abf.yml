@@ -1,5 +1,6 @@
 removed_sources:
   plasma-nm-0.9.3.3.tar.xz: dd7fe1ff2946e12ab49d324966a09df4802cedb5
-sources:
   plasma-nm-0.9.3.4.tar.xz: a499d6e9d2a92e4e72ea814fbd8bce2f22731921
+sources:
+  plasma-nm-0.9.3.5.tar.xz: aa416547bb2b718d3e465a912ce2490461ed052b
   ru.tar.gz: f1223a6a7d1e74ee6f64524677b9cb214fb3ffc9
