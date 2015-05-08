@@ -1,90 +1,97 @@
+%define major %(echo %{version} |cut -d. -f1-3)
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	0.9.3.6
-Release:	1
+Version:	5.3.0
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		https://projects.kde.org/projects/playground/network/%{name}
-Source0:	ftp://ftp.kde.org/pub/kde/unstable/%{name}/%{name}-%{version}.tar.xz
-Source1:	01-plasma-nm.js
-Source10:	ru.tar.gz
-BuildRequires:	mobile-broadband-provider-info
-BuildRequires:	kdelibs4-devel
-BuildRequires:	pkgconfig(libnm-glib)
-BuildRequires:	pkgconfig(libnm-util)
-BuildRequires:	pkgconfig(ModemManagerQt)
-BuildRequires:	pkgconfig(NetworkManagerQt)
+Url:		https://projects.kde.org/projects/playground/network/plasma-nm
+Source0:	http://download.kde.org/%{stable}/plasma/%{major}/%{name}-%{version}.tar.xz
+BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5ModemManagerQt)
+BuildRequires:	cmake(KF5NetworkManagerQt)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5Service)
+BuildRequires:	cmake(KF5Completion)
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5Wallet)
+BuildRequires:	cmake(KF5ItemViews)
+BuildRequires:	cmake(KF5XmlGui)
+BuildRequires:	cmake(KF5ConfigWidgets)
+BuildRequires:	cmake(KF5IconThemes)
+BuildRequires:	cmake(KF5Solid)
+BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5Notifications)
+BuildRequires:	cmake(KF5Plasma)
+BuildRequires:	cmake(KF5Declarative)
+BuildRequires:	cmake(KF5Init)
+BuildRequires:	cmake(KF5KDELibs4Support)
 BuildRequires:	pkgconfig(NetworkManager) >= 0.9.8
 BuildRequires:	pkgconfig(openconnect) >= 3.99
+BuildRequires:	pkgconfig(mobile-broadband-provider-info)
+BuildRequires:	pkgconfig(ModemManager)
+BuildRequires:	pkgconfig(Qt5Core)
+BuildRequires:	pkgconfig(Qt5DBus)
+BuildRequires:	pkgconfig(Qt5Gui)
+BuildRequires:	pkgconfig(Qt5Network)
+BuildRequires:	pkgconfig(Qt5Qml)
+BuildRequires:	pkgconfig(Qt5Quick)
+BuildRequires:	pkgconfig(Qt5Test)
+BuildRequires:	pkgconfig(Qt5Widgets)
+BuildRequires:	pkgconfig(libnm)
+BuildRequires:	pkgconfig(libnm-glib)
+BuildRequires:	pkgconfig(libnm-util)
 Requires:	mobile-broadband-provider-info
 Requires:	modemmanager
 Requires:	networkmanager
 Conflicts:	plasma-applet-networkmanagement
 Conflicts:	knetworkmanager-common
+Conflicts:	plasma-nm < 0.9.3.7
 Obsoletes:	plasma-applet-networkmanagement <= 0.9.0.9-2
+%rename	plasma-nm5 < 5.3.0-2
 
 %description
-Plasma applet and editor for managing your network connections in KDE4 using
+Plasma applet and editor for managing your network connections in KDE5 using
 the default NetworkManager service.
 
 %files -f %{name}.lang
-%{_kde_bindir}/kde-nm-connection-editor
-%{_kde_libdir}/kde4/imports/org/kde/networkmanagement/
-%{_kde_libdir}/kde4/kded_networkmanagement.so
-%{_kde_libdir}/kde4/networkmanagement_notifications.so
-%{_kde_libdir}/kde4/plasmanetworkmanagement_l2tpui.so
-%{_kde_libdir}/kde4/plasmanetworkmanagement_openconnectui.so
-%{_kde_libdir}/kde4/plasmanetworkmanagement_openswanui.so
-%{_kde_libdir}/kde4/plasmanetworkmanagement_openvpnui.so
-%{_kde_libdir}/kde4/plasmanetworkmanagement_pptpui.so
-%{_kde_libdir}/kde4/plasmanetworkmanagement_strongswanui.so
-%{_kde_libdir}/kde4/plasmanetworkmanagement_vpncui.so
-%{_kde_libdir}/kde4/plugins/designer/plasmanetworkmanagementwidgets.so
-%{_kde_libdir}/libplasmanetworkmanagement-editor.so
-%{_kde_libdir}/libplasmanetworkmanagement-internal.so
-%{_kde_applicationsdir}/kde-nm-connection-editor.desktop
-%{_kde_appsdir}/plasma-desktop/updates/01-plasma-nm.js
-%{_kde_appsdir}/plasma/plasmoids/org.kde.networkmanagement
-%{_kde_appsdir}/desktoptheme/default/icons/plasma-networkmanagement2.svgz
-%{_kde_appsdir}/kde-nm-connection-editor
-%{_kde_appsdir}/networkmanagement
-%{_kde_iconsdir}/oxygen/*/devices/network-defaultroute.png
-%{_kde_services}/kded/networkmanagement.desktop
-%{_kde_services}/plasma-applet-networkmanagement.desktop
-%{_kde_services}/networkmanagement_notifications.desktop
-%{_kde_services}/plasmanetworkmanagement_l2tpui.desktop
-%{_kde_services}/plasmanetworkmanagement_openconnectui.desktop
-%{_kde_services}/plasmanetworkmanagement_openswanui.desktop
-%{_kde_services}/plasmanetworkmanagement_openvpnui.desktop
-%{_kde_services}/plasmanetworkmanagement_pptpui.desktop
-%{_kde_services}/plasmanetworkmanagement_strongswanui.desktop
-%{_kde_services}/plasmanetworkmanagement_vpncui.desktop
-%{_kde_servicetypes}/plasma-networkmanagement-vpnuiplugin.desktop
+%{_bindir}/kde5-nm-connection-editor
+%{_libdir}/libplasmanm_*.so
+%{_libdir}/qt5/plugins/kded_networkmanagement.so
+%{_libdir}/qt5/plugins/libplasmanetworkmanagement_*.so
+%{_libdir}/qt5/qml/org/kde/plasma/networkmanagement
+%{_datadir}/applications/kde5-nm-connection-editor.desktop
+%{_datadir}/kxmlgui5/kde5-nm-connection-editor
+%{_datadir}/knotifications5/networkmanagement.notifyrc
+%{_datadir}/kservices5/kded/networkmanagement.desktop
+%{_datadir}/kservices5/plasmanetworkmanagement*.desktop
+%{_datadir}/kservices5/plasma-applet-org.kde.plasma.networkmanagement.desktop
+%{_datadir}/plasma/plasmoids/org.kde.plasma.networkmanagement
+%{_datadir}/kservicetypes5/plasma-networkmanagement*.desktop
 
 #----------------------------------------------------------------------------
 
 %prep
 %setup -q
-%patch0 -p1
-
-# Use better russian translations (must be re-checked in 0.9.3.1+)
-pushd po
-tar -xvzf %{SOURCE10}
-popd
+%apply_patches
+# Workaround for clang bug causing a compiler crash
+#export CXX=g++
+%cmake_kde5
 
 %build
-%cmake_kde4
-%make
+%ninja -C build
 
 %install
-%makeinstall_std -C build
+%ninja_install -C build
 
-mkdir -p %{buildroot}%{_kde_appsdir}/plasma-desktop/updates/
-install -m 0644 %{SOURCE1} %{buildroot}%{_kde_appsdir}/plasma-desktop/updates/01-plasma-nm.js
-
-%find_lang kde-nm-connection-editor \
-	plasma_applet_org.kde.networkmanagement \
-	libplasmanetworkmanagement-editor \
+%find_lang \
+	kde5-nm-connection-editor \
+	plasma_applet_org.kde.plasma.networkmanagement \
+	plasmanetworkmanagement-libs \
 	plasmanetworkmanagement-kded \
 	plasmanetworkmanagement_l2tpui \
 	plasmanetworkmanagement_openconnectui \
