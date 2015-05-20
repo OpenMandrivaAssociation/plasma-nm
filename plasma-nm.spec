@@ -4,7 +4,7 @@
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
 Version:	5.3.0
-Release:	2
+Release:	3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://projects.kde.org/projects/playground/network/plasma-nm
@@ -52,7 +52,7 @@ Conflicts:	plasma-applet-networkmanagement
 Conflicts:	knetworkmanager-common
 Conflicts:	plasma-nm < 0.9.3.7
 Obsoletes:	plasma-applet-networkmanagement <= 0.9.0.9-2
-%rename	plasma-nm5 < 5.3.0-2
+%rename	plasma-nm5
 
 %description
 Plasma applet and editor for managing your network connections in KDE5 using
