@@ -98,6 +98,8 @@ the default NetworkManager service.
 	plasmanetworkmanagement_openswanui \
 	plasmanetworkmanagement_openvpnui \
 	plasmanetworkmanagement_pptpui \
+    plasmanetworkmanagement_sshui \
+    plasmanetworkmanagement_sstpui
 	plasmanetworkmanagement_strongswanui \
 	plasmanetworkmanagement_vpncui \
 	%{name}.lang
