@@ -88,19 +88,18 @@ the default NetworkManager service.
 %install
 %ninja_install -C build
 
-%find_lang \
-	kde5-nm-connection-editor \
+%find_lang kde5-nm-connection-editor \
 	plasma_applet_org.kde.plasma.networkmanagement \
-	plasmanetworkmanagement-libs \
-	plasmanetworkmanagement-kded \
-	plasmanetworkmanagement_l2tpui \
-	plasmanetworkmanagement_openconnectui \
-	plasmanetworkmanagement_openswanui \
-	plasmanetworkmanagement_openvpnui \
-	plasmanetworkmanagement_pptpui \
+    plasmanetworkmanagement-kded \
+    plasmanetworkmanagement_l2tpui \
+    plasmanetworkmanagement-libs \
+    plasmanetworkmanagement_openconnectui \
+    plasmanetworkmanagement_openswanui \
+    plasmanetworkmanagement_openvpnui \
+    plasmanetworkmanagement_pptpui \
     plasmanetworkmanagement_sshui \
-    plasmanetworkmanagement_sstpui
-	plasmanetworkmanagement_strongswanui \
-	plasmanetworkmanagement_vpncui \
-	%{name}.lang
+    plasmanetworkmanagement_sstpui \
+    plasmanetworkmanagement_strongswanui \
+    plasmanetworkmanagement_vpncui \
+    %{name}.lang
 
