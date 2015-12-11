@@ -62,13 +62,12 @@ the default NetworkManager service.
 %files -f %{name}.lang
 %{_bindir}/kde5-nm-connection-editor
 %{_libdir}/libplasmanm_*.so
-%{_libdir}/qt5/plugins/kded_networkmanagement.so
 %{_libdir}/qt5/plugins/libplasmanetworkmanagement_*.so
+%{_libdir}/qt5/plugins/kf5/kded/networkmanagement.so
 %{_libdir}/qt5/qml/org/kde/plasma/networkmanagement
 %{_datadir}/applications/kde5-nm-connection-editor.desktop
 %{_datadir}/kxmlgui5/kde5-nm-connection-editor
 %{_datadir}/knotifications5/networkmanagement.notifyrc
-%{_datadir}/kservices5/kded/networkmanagement.desktop
 %{_datadir}/kservices5/plasmanetworkmanagement*.desktop
 %{_datadir}/kservices5/plasma-applet-org.kde.plasma.networkmanagement.desktop
 %{_datadir}/plasma/plasmoids/org.kde.plasma.networkmanagement
@@ -79,8 +78,6 @@ the default NetworkManager service.
 %prep
 %setup -q
 %apply_patches
-# Workaround for clang bug causing a compiler crash
-#export CXX=g++
 %cmake_kde5
 
 %build
@@ -90,7 +87,7 @@ the default NetworkManager service.
 %ninja_install -C build
 
 %find_lang kde5-nm-connection-editor \
-	plasma_applet_org.kde.plasma.networkmanagement \
+    plasma_applet_org.kde.plasma.networkmanagement \
     plasmanetworkmanagement-kded \
     plasmanetworkmanagement_l2tpui \
     plasmanetworkmanagement-libs \
