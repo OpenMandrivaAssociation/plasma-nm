@@ -1,4 +1,4 @@
-/* 
+/*
    01-plasma-nm.js - Add NM plasmoid to the systray
    Copyright (C) 2010 Kevin Kofler <kevin.kofler@chello.at>
    Copyright (C) 2013 Jan Grulich <jgrulich@redhat.com>

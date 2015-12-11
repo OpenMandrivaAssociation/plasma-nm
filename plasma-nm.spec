@@ -45,6 +45,7 @@ BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(libnm)
 BuildRequires:	pkgconfig(libnm-glib)
 BuildRequires:	pkgconfig(libnm-util)
+BuildRequires:	pkgconfig(qca2-qt5)
 Requires:	mobile-broadband-provider-info
 Requires:	modemmanager
 Requires:	networkmanager
