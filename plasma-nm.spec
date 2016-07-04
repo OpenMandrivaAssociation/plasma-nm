@@ -3,7 +3,7 @@
 
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	5.6.5
+Version:	5.7.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -99,5 +99,5 @@ the default NetworkManager service.
     plasmanetworkmanagement_sstpui \
     plasmanetworkmanagement_strongswanui \
     plasmanetworkmanagement_vpncui \
-    %{name}.lang
+    %{name}.lang || touch %{name.lang}
 
