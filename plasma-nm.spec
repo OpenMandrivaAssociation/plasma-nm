@@ -3,7 +3,7 @@
 
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	5.7.0
+Version:	5.7.1
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
