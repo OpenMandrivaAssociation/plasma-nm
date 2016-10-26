@@ -66,6 +66,7 @@ the default NetworkManager service.
 %{_libdir}/qt5/plugins/kf5/kded/networkmanagement.so
 %{_libdir}/qt5/qml/org/kde/plasma/networkmanagement
 %{_datadir}/applications/kde5-nm-connection-editor.desktop
+%{_datadir}/metainfo/*.xml
 %{_datadir}/kxmlgui5/kde5-nm-connection-editor
 %{_datadir}/knotifications5/networkmanagement.notifyrc
 %{_datadir}/kservices5/plasmanetworkmanagement*.desktop
