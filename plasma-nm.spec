@@ -64,16 +64,16 @@ the default NetworkManager service.
 %files -f %{name}.lang
 %{_bindir}/kde5-nm-connection-editor
 %{_libdir}/libplasmanm_*.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_*.so
+%{_libdir}/qt5/plugins/*.so
 %{_libdir}/qt5/plugins/kf5/kded/networkmanagement.so
 %{_libdir}/qt5/qml/org/kde/plasma/networkmanagement
 %{_datadir}/applications/kde5-nm-connection-editor.desktop
 %{_datadir}/metainfo/*.xml
 %{_datadir}/kxmlgui5/kde5-nm-connection-editor
 %{_datadir}/knotifications5/networkmanagement.notifyrc
-%{_datadir}/kservices5/plasmanetworkmanagement*.desktop
-%{_datadir}/kservices5/plasma-applet-org.kde.plasma.networkmanagement.desktop
+%{_datadir}/kservices5/*.desktop
 %{_datadir}/plasma/plasmoids/org.kde.plasma.networkmanagement
+%{_datadir}/kcm_networkmanagement
 %{_datadir}/kservicetypes5/plasma-networkmanagement*.desktop
 
 #----------------------------------------------------------------------------
@@ -102,5 +102,7 @@ the default NetworkManager service.
     plasmanetworkmanagement_sstpui \
     plasmanetworkmanagement_strongswanui \
     plasmanetworkmanagement_vpncui \
+    plasmanetworkmanagement_iodineui \
+    plasmanetworkmanagement-kcm \
     %{name}.lang || touch %{name.lang}
 
