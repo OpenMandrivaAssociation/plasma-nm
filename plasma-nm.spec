@@ -1,6 +1,10 @@
 %define major %(echo %{version} |cut -d. -f1-3)
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
+%ifarch aarch64
+%global optflags %{optflags} -fuse-ld=bfd
+%endif
+
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
 Version:	5.10.2
