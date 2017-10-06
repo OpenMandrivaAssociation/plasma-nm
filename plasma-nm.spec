@@ -7,7 +7,7 @@
 
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	5.10.5
+Version:	5.11.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -66,14 +66,11 @@ Plasma applet and editor for managing your network connections in KDE5 using
 the default NetworkManager service.
 
 %files -f %{name}.lang
-%{_bindir}/kde5-nm-connection-editor
 %{_libdir}/libplasmanm_*.so
 %{_libdir}/qt5/plugins/*.so
 %{_libdir}/qt5/plugins/kf5/kded/networkmanagement.so
 %{_libdir}/qt5/qml/org/kde/plasma/networkmanagement
-%{_datadir}/applications/kde5-nm-connection-editor.desktop
 %{_datadir}/metainfo/*.xml
-%{_datadir}/kxmlgui5/kde5-nm-connection-editor
 %{_datadir}/knotifications5/networkmanagement.notifyrc
 %{_datadir}/kservices5/*.desktop
 %{_datadir}/plasma/plasmoids/org.kde.plasma.networkmanagement
@@ -93,20 +90,4 @@ the default NetworkManager service.
 %install
 %ninja_install -C build
 
-%find_lang kde5-nm-connection-editor \
-    plasma_applet_org.kde.plasma.networkmanagement \
-    plasmanetworkmanagement-kded \
-    plasmanetworkmanagement_l2tpui \
-    plasmanetworkmanagement-libs \
-    plasmanetworkmanagement_openconnectui \
-    plasmanetworkmanagement_openswanui \
-    plasmanetworkmanagement_openvpnui \
-    plasmanetworkmanagement_pptpui \
-    plasmanetworkmanagement_sshui \
-    plasmanetworkmanagement_sstpui \
-    plasmanetworkmanagement_strongswanui \
-    plasmanetworkmanagement_vpncui \
-    plasmanetworkmanagement_iodineui \
-    plasmanetworkmanagement-kcm \
-    %{name}.lang || touch %{name.lang}
-
+%find_lang %{name} --all-name --with-html --with-man
