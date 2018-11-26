@@ -1,4 +1,5 @@
 removed_sources:
   plasma-nm-5.12.3.tar.xz: 56766a48c67855d181cd6f7068a73c5b7dffb04e
-sources:
   plasma-nm-5.12.6.tar.xz: c721fffc0c5566b7e53a11cec5eb7480b983161a
+sources:
+  plasma-nm-5.12.7.tar.xz: caf4afc6e3702b416dcd3f8847f5d9af6dbcf848
