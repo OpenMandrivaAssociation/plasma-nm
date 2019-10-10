@@ -7,8 +7,8 @@
 
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	5.16.90
-Release:	2
+Version:	5.17.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://projects.kde.org/projects/playground/network/plasma-nm
@@ -35,7 +35,6 @@ BuildRequires:	cmake(KF5Declarative)
 BuildRequires:	cmake(KF5Init)
 BuildRequires:	cmake(KF5KDELibs4Support)
 BuildRequires:	cmake(KF5Prison)
-BuildRequires:	pkgconfig(NetworkManager) >= 0.9.8
 BuildRequires:	pkgconfig(openconnect) >= 3.99
 BuildRequires:	pkgconfig(mobile-broadband-provider-info)
 BuildRequires:	pkgconfig(ModemManager)
@@ -50,8 +49,6 @@ BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(Qt5QuickWidgets)
 BuildRequires:	pkgconfig(Qt5UiTools)
 BuildRequires:	pkgconfig(libnm)
-BuildRequires:	pkgconfig(libnm-glib)
-BuildRequires:	pkgconfig(libnm-util)
 BuildRequires:	pkgconfig(qca2-qt5)
 Requires:	mobile-broadband-provider-info
 Requires:	modemmanager
