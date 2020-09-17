@@ -5,12 +5,9 @@
 %global optflags %{optflags} -fuse-ld=bfd
 %endif
 
-# filter plugin provides
-%global __provides_exclude_from ^(%{_kf5_qtplugindir}/.*\\.so)$
-
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	5.19.5
+Version:	5.19.90
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
