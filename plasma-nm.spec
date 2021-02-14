@@ -7,7 +7,7 @@
 
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	5.20.5
+Version:	5.21.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -99,6 +99,7 @@ the default NetworkManager service.
 %{_datadir}/kservices5/plasmanetworkmanagement_sstpui.desktop
 %{_datadir}/kservices5/plasmanetworkmanagement_strongswanui.desktop
 %{_datadir}/kservices5/plasmanetworkmanagement_vpncui.desktop
+%{_datadir}/kservices5/plasmanetworkmanagement_openconnect_pulseui.desktop
 %{_datadir}/plasma/plasmoids/org.kde.plasma.networkmanagement
 %{_datadir}/kcm_networkmanagement
 %{_datadir}/kservicetypes5/plasma-networkmanagement-vpnuiplugin.desktop
@@ -114,11 +115,9 @@ Plasma Mobile interface to NetworkManager
 
 %files mobile -f %{name}-mobile.lang
 %{_libdir}/qt5/plugins/kcms/kcm_mobile_*.so
-%{_datadir}/kpackage/kcms/kcm_mobile_broadband
 %{_datadir}/kpackage/kcms/kcm_mobile_hotspot
 %{_datadir}/kpackage/kcms/kcm_mobile_wifi
 %{_datadir}/kservices5/hotspotsettings.desktop
-%{_datadir}/kservices5/mobilebroadbandsettings.desktop
 %{_datadir}/kservices5/wifisettings.desktop
 
 %prep
