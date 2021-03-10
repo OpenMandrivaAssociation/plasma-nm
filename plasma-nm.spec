@@ -1,5 +1,5 @@
 %define major %(echo %{version} |cut -d. -f1-3)
-%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+%define stable %([ "$(echo %{version} |cut -d. -f3)" -ge 80 ] && echo -n un; echo -n stable)
 
 %ifarch aarch64
 %global optflags %{optflags} -fuse-ld=bfd
@@ -55,6 +55,8 @@ Requires:	kirigami
 Requires:	mobile-broadband-provider-info
 Requires:	modemmanager
 Requires:	networkmanager
+Requires:	networkmanager-wifi
+Requires:	networkmanager-ppp
 Conflicts:	plasma-applet-networkmanagement
 Conflicts:	knetworkmanager-common
 Conflicts:	plasma-nm < 0.9.3.7
@@ -131,18 +133,18 @@ Plasma Mobile interface to NetworkManager
 %ninja_install -C build
 
 for i in plasma_applet_org.kde.plasma.networkmanagement \
-		plasmanetworkmanagement-kcm plasmanetworkmanagement-kded \
-		plasmanetworkmanagement-libs plasmanetworkmanagement_fortisslvpnui \
-		plasmanetworkmanagement_iodineui plasmanetworkmanagement_l2tpui \
-		plasmanetworkmanagement_openconnectui plasmanetworkmanagement_openswanui \
-		plasmanetworkmanagement_openvpnui plasmanetworkmanagement_pptpui \
-		plasmanetworkmanagement_sshui plasmanetworkmanagement_sstpui \
-		plasmanetworkmanagement_strongswanui plasmanetworkmanagement_vpncui; do
+    plasmanetworkmanagement-kcm plasmanetworkmanagement-kded \
+    plasmanetworkmanagement-libs plasmanetworkmanagement_fortisslvpnui \
+    plasmanetworkmanagement_iodineui plasmanetworkmanagement_l2tpui \
+    plasmanetworkmanagement_openconnectui plasmanetworkmanagement_openswanui \
+    plasmanetworkmanagement_openvpnui plasmanetworkmanagement_pptpui \
+    plasmanetworkmanagement_sshui plasmanetworkmanagement_sstpui \
+    plasmanetworkmanagement_strongswanui plasmanetworkmanagement_vpncui; do
 	%find_lang $i --with-html --with-man
 	cat $i.lang >>%{name}.lang
 done
 
 for i in kcm_mobile_broadband kcm_mobile_hotspot kcm_mobile_wifi; do
-	%find_lang $i --with-html --with-man
-	cat $i.lang >>%{name}-mobile.lang
+    %find_lang $i --with-html --with-man
+    cat $i.lang >>%{name}-mobile.lang
 done
