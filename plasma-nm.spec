@@ -87,7 +87,6 @@ the default NetworkManager service.
 %{_datadir}/metainfo/org.kde.plasma.networkmanagement.appdata.xml
 %{_datadir}/knotifications5/networkmanagement.notifyrc
 %{_datadir}/kservices5/kcm_networkmanagement.desktop
-%{_datadir}/kservices5/plasma-applet-org.kde.plasma.networkmanagement.desktop
 %{_datadir}/kservices5/plasmanetworkmanagement_fortisslvpnui.desktop
 %{_datadir}/kservices5/plasmanetworkmanagement_iodineui.desktop
 %{_datadir}/kservices5/plasmanetworkmanagement_l2tpui.desktop
