@@ -7,7 +7,7 @@
 
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	5.22.5
+Version:	5.22.90
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -71,39 +71,27 @@ the default NetworkManager service.
 %{_libdir}/libplasmanm_editor.so
 %{_libdir}/libplasmanm_internal.so
 %{_libdir}/qt5/plugins/kcm_networkmanagement.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_fortisslvpnui.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_iodineui.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_l2tpui.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_openconnectui.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_openswanui.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_openvpnui.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_pptpui.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_sshui.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_sstpui.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_strongswanui.so
-%{_libdir}/qt5/plugins/libplasmanetworkmanagement_vpncui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_fortisslvpnui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_iodineui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_l2tpui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_openswanui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_openvpnui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_pptpui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_sshui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_sstpui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_strongswanui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_vpncui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_openconnect_anyconnect.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_openconnect_globalprotectui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_openconnect_juniperui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_openconnect_pulseui.so
 %{_libdir}/qt5/plugins/kf5/kded/networkmanagement.so
 %{_libdir}/qt5/qml/org/kde/plasma/networkmanagement
 %{_datadir}/metainfo/org.kde.plasma.networkmanagement.appdata.xml
 %{_datadir}/knotifications5/networkmanagement.notifyrc
 %{_datadir}/kservices5/kcm_networkmanagement.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_fortisslvpnui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_iodineui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_l2tpui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_openconnect_globalprotectui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_openconnect_juniperui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_openconnectui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_openswanui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_openvpnui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_pptpui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_sshui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_sstpui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_strongswanui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_vpncui.desktop
-%{_datadir}/kservices5/plasmanetworkmanagement_openconnect_pulseui.desktop
 %{_datadir}/plasma/plasmoids/org.kde.plasma.networkmanagement
 %{_datadir}/kcm_networkmanagement
-%{_datadir}/kservicetypes5/plasma-networkmanagement-vpnuiplugin.desktop
 
 #----------------------------------------------------------------------------
 
