@@ -7,7 +7,7 @@
 
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	5.23.4
+Version:	5.23.5
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -92,6 +92,7 @@ the default NetworkManager service.
 %{_datadir}/kservices5/kcm_networkmanagement.desktop
 %{_datadir}/plasma/plasmoids/org.kde.plasma.networkmanagement
 %{_datadir}/kcm_networkmanagement
+%{_datadir}/kservices5/plasma-applet-org.kde.plasma.networkmanagement.desktop
 
 #----------------------------------------------------------------------------
 
