@@ -7,8 +7,8 @@
 
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	5.23.5
-Release:	2
+Version:	5.24.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://projects.kde.org/projects/playground/network/plasma-nm
@@ -93,6 +93,7 @@ the default NetworkManager service.
 %{_datadir}/plasma/plasmoids/org.kde.plasma.networkmanagement
 %{_datadir}/kcm_networkmanagement
 %{_datadir}/kservices5/plasma-applet-org.kde.plasma.networkmanagement.desktop
+%{_datadir}/qlogging-categories5/plasma-nm.categories
 
 #----------------------------------------------------------------------------
 
@@ -132,7 +133,7 @@ for i in plasma_applet_org.kde.plasma.networkmanagement \
 	cat $i.lang >>%{name}.lang
 done
 
-for i in kcm_mobile_broadband kcm_mobile_hotspot kcm_mobile_wifi; do
+for i in kcm_mobile_hotspot kcm_mobile_wifi; do
     %find_lang $i --with-html --with-man
     cat $i.lang >>%{name}-mobile.lang
 done
