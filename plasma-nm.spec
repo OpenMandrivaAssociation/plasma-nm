@@ -7,8 +7,8 @@
 
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	5.24.5
-Release:	2
+Version:	5.25.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://projects.kde.org/projects/playground/network/plasma-nm
@@ -70,11 +70,10 @@ the default NetworkManager service.
 %files -f %{name}.lang
 %{_libdir}/libplasmanm_editor.so
 %{_libdir}/libplasmanm_internal.so
-%{_libdir}/qt5/plugins/kcm_networkmanagement.so
 %{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_fortisslvpnui.so
 %{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_iodineui.so
 %{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_l2tpui.so
-%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_openswanui.so
+%{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_libreswanui.so
 %{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_openvpnui.so
 %{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_pptpui.so
 %{_libdir}/qt5/plugins/plasma/network/vpn/plasmanetworkmanagement_sshui.so
@@ -89,11 +88,11 @@ the default NetworkManager service.
 %{_libdir}/qt5/qml/org/kde/plasma/networkmanagement
 %{_datadir}/metainfo/org.kde.plasma.networkmanagement.appdata.xml
 %{_datadir}/knotifications5/networkmanagement.notifyrc
-%{_datadir}/kservices5/kcm_networkmanagement.desktop
 %{_datadir}/plasma/plasmoids/org.kde.plasma.networkmanagement
 %{_datadir}/kcm_networkmanagement
-%{_datadir}/kservices5/plasma-applet-org.kde.plasma.networkmanagement.desktop
 %{_datadir}/qlogging-categories5/plasma-nm.categories
+%{_libdir}/qt5/plugins/plasma/kcms/systemsettings_qwidgets/kcm_networkmanagement.so
+%{_datadir}/applications/kcm_networkmanagement.desktop
 
 #----------------------------------------------------------------------------
 
@@ -108,8 +107,6 @@ Plasma Mobile interface to NetworkManager
 %{_libdir}/qt5/plugins/kcms/kcm_mobile_*.so
 %{_datadir}/kpackage/kcms/kcm_mobile_hotspot
 %{_datadir}/kpackage/kcms/kcm_mobile_wifi
-%{_datadir}/kservices5/hotspotsettings.desktop
-%{_datadir}/kservices5/wifisettings.desktop
 
 %prep
 %autosetup -p1
@@ -125,7 +122,7 @@ for i in plasma_applet_org.kde.plasma.networkmanagement \
     plasmanetworkmanagement-kcm plasmanetworkmanagement-kded \
     plasmanetworkmanagement-libs plasmanetworkmanagement_fortisslvpnui \
     plasmanetworkmanagement_iodineui plasmanetworkmanagement_l2tpui \
-    plasmanetworkmanagement_openconnectui plasmanetworkmanagement_openswanui \
+    plasmanetworkmanagement_libreswanui plasmanetworkmanagement_openconnectui \
     plasmanetworkmanagement_openvpnui plasmanetworkmanagement_pptpui \
     plasmanetworkmanagement_sshui plasmanetworkmanagement_sstpui \
     plasmanetworkmanagement_strongswanui plasmanetworkmanagement_vpncui; do
