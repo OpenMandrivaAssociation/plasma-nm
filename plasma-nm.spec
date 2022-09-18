@@ -36,6 +36,7 @@ BuildRequires:	cmake(KF5Init)
 BuildRequires:	cmake(KF5KDELibs4Support)
 BuildRequires:	cmake(KF5Prison)
 BuildRequires:	cmake(KF5Kirigami2)
+BuildRequires:	cmake(KF5KCMUtils)
 BuildRequires:	pkgconfig(openconnect) >= 3.99
 BuildRequires:	pkgconfig(mobile-broadband-provider-info)
 BuildRequires:	pkgconfig(ModemManager)
