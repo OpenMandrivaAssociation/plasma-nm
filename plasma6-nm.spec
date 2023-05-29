@@ -54,7 +54,6 @@ BuildRequires:	cmake(Qt6UiTools)
 BuildRequires:	cmake(QCoro6)
 BuildRequires:	cmake(Qca-qt6)
 BuildRequires:	pkgconfig(libnm)
-Requires:	kirigami
 Requires:	mobile-broadband-provider-info
 Requires:	modemmanager
 Requires:	networkmanager
