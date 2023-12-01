@@ -55,8 +55,6 @@ BuildRequires:	cmake(Qt6UiTools)
 BuildRequires:	cmake(QCoro6)
 BuildRequires:	cmake(Qca-qt6)
 BuildRequires:	pkgconfig(libnm)
-# Just to prevent the KF5 version from being pulled in
-BuildRequires:	plasma6-xdg-desktop-portal-kde
 Requires:	mobile-broadband-provider-info
 Requires:	modemmanager
 Requires:	networkmanager
