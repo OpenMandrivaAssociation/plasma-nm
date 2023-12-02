@@ -32,6 +32,7 @@ BuildRequires:	cmake(KF6Solid)
 BuildRequires:	cmake(KF6DBusAddons)
 BuildRequires:	cmake(KF6Notifications)
 BuildRequires:	cmake(Plasma) >= 5.90.0
+BuildRequires:	cmake(PlasmaQuick)
 BuildRequires:	cmake(KF6Declarative)
 BuildRequires:	cmake(KF6Prison)
 BuildRequires:	cmake(KF6Kirigami2)
