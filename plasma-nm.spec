@@ -5,9 +5,9 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Summary:	Plasma applet written in QML for managing network connections
-Name:		plasma6-nm
+Name:		plasma-nm
 Version:	6.3.4
-Release:	%{?git:0.%{git}.}2
+Release:	%{?git:0.%{git}.}3
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://invent.kde.org/plasma/plasma-nm
@@ -68,6 +68,12 @@ Conflicts:	plasma-applet-networkmanagement
 Conflicts:	knetworkmanager-common
 Conflicts:	plasma-nm < 0.9.3.7
 Obsoletes:	plasma-applet-networkmanagement <= 0.9.0.9-2
+# Renamed 2025-05-02 after 6.0
+%rename plasma6-nm
+
+BuildSystem:	cmake
+BuildOption:	-DBUILD_QCH:BOOL=ON
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
 Plasma applet and editor for managing your network connections in KDE5 using
@@ -105,29 +111,3 @@ the default NetworkManager service.
 %{_qtdir}/plugins/plasma/kcms/systemsettings_qwidgets/kcm_networkmanagement.so
 %{_datadir}/applications/kcm_networkmanagement.desktop
 %{_datadir}/applications/org.kde.vpnimport.desktop
-
-%prep
-%autosetup -p1 -n plasma-nm-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DBUILD_QCH:BOOL=ON \
-	-DBUILD_WITH_QT6:BOOL=ON \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja_build -C build
-
-%install
-%ninja_install -C build
-
-for i in plasma_applet_org.kde.plasma.networkmanagement \
-    plasmanetworkmanagement-kcm plasmanetworkmanagement-kded \
-    plasmanetworkmanagement-libs plasmanetworkmanagement_fortisslvpnui \
-    plasmanetworkmanagement_iodineui plasmanetworkmanagement_l2tpui \
-    plasmanetworkmanagement_libreswanui plasmanetworkmanagement_openconnectui \
-    plasmanetworkmanagement_openvpnui plasmanetworkmanagement_pptpui \
-    plasmanetworkmanagement_sshui plasmanetworkmanagement_sstpui \
-    plasmanetworkmanagement_strongswanui plasmanetworkmanagement_vpncui; do
-	%find_lang $i --with-html --with-man
-	cat $i.lang >>%{name}.lang
-done
