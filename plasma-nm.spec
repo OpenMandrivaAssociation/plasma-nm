@@ -6,7 +6,7 @@
 
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	6.4.5
+Version:	6.5.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -84,6 +84,7 @@ the default NetworkManager service.
 %{_libdir}/libplasmanm_internal.so
 %dir %{_qtdir}/plugins/plasma/network
 %dir %{_qtdir}/plugins/plasma/network/vpn
+%{_qtdir}/plugins/plasma/applets/org.kde.plasma.networkmanagement.so
 %{_qtdir}/plugins/plasma/network/vpn/plasmanetworkmanagement_fortisslvpnui.so
 %{_qtdir}/plugins/plasma/network/vpn/plasmanetworkmanagement_iodineui.so
 %{_qtdir}/plugins/plasma/network/vpn/plasmanetworkmanagement_l2tpui.so
@@ -103,9 +104,7 @@ the default NetworkManager service.
 %{_qtdir}/plugins/plasma/network/vpn/plasmanetworkmanagement_openconnect_pulseui.so
 %{_qtdir}/plugins/kf6/kded/networkmanagement.so
 %{_qtdir}/qml/org/kde/plasma/networkmanagement
-%{_datadir}/metainfo/org.kde.plasma.networkmanagement.appdata.xml
 %{_datadir}/knotifications6/networkmanagement.notifyrc
-%{_datadir}/plasma/plasmoids/org.kde.plasma.networkmanagement
 %{_datadir}/kcm_networkmanagement
 %{_datadir}/qlogging-categories6/plasma-nm.categories
 %{_qtdir}/plugins/plasma/kcms/systemsettings_qwidgets/kcm_networkmanagement.so
