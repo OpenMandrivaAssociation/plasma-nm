@@ -6,7 +6,7 @@
 
 Summary:	Plasma applet written in QML for managing network connections
 Name:		plasma-nm
-Version:	6.5.5
+Version:	6.6.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -116,3 +116,5 @@ the default NetworkManager service.
 %{_datadir}/applications/kcm_cellular_network.desktop
 %{_datadir}/applications/kcm_mobile_hotspot.desktop
 %{_datadir}/applications/kcm_mobile_wifi.desktop
+%{_qtdir}/plugins/plasma/kcms/systemsettings/kcm_mobile_wired.so
+%{_datadir}/applications/kcm_mobile_wired.desktop
