@@ -40,9 +40,6 @@ BuildRequires:	cmake(KF6Prison)
 BuildRequires:	cmake(KF6Kirigami2)
 BuildRequires:	cmake(KF6KCMUtils)
 BuildRequires:	cmake(KF6Svg)
-BuildRequires:	pkgconfig(openconnect) >= 3.99
-BuildRequires:	pkgconfig(mobile-broadband-provider-info)
-BuildRequires:	pkgconfig(ModemManager)
 BuildRequires:	cmake(Qt6)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6DBus)
@@ -59,7 +56,11 @@ BuildRequires:	cmake(Qt6UiTools)
 BuildRequires:	cmake(Qt6Keychain)
 BuildRequires:	cmake(QCoro6)
 BuildRequires:	cmake(Qca-qt6)
+BuildRequires:	pkgconfig(openconnect) >= 3.99
+BuildRequires:	pkgconfig(mobile-broadband-provider-info)
+BuildRequires:	pkgconfig(ModemManager)
 BuildRequires:	pkgconfig(libnm)
+BuildRequires:	qml(org.kde.kirigamiaddons.formcard)
 Requires:	mobile-broadband-provider-info
 Requires:	modemmanager
 Requires:	networkmanager
